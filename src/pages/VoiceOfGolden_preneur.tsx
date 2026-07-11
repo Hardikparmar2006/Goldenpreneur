@@ -10,7 +10,7 @@ interface VoiceVideo {
   created_at: string;
 }
 
-export default function VoiceOfGolden preneur() {
+export default function VoiceOfGoldenPreneur() {
   const [videos, setVideos] = useState<VoiceVideo[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

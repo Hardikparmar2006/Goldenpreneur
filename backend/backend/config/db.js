@@ -12,7 +12,7 @@ const pool = mysql.createPool({
   port:               parseInt(process.env.DB_PORT || '3306'),
   user:               process.env.DB_USER     || 'root',
   password:           process.env.DB_PASSWORD || '',
-  database:           process.env.DB_NAME     || 'Golden preneur',
+  database:           process.env.DB_NAME     || 'Goldenpreneur',
   waitForConnections: true,
   connectionLimit:    10,
   queueLimit:         0,
@@ -23,7 +23,7 @@ const pool = mysql.createPool({
 // Test connection on startup
 pool.getConnection()
   .then(conn => {
-    console.log('✅  MySQL connected to database:', process.env.DB_NAME || 'Golden preneur');
+    console.log('✅  MySQL connected to database:', process.env.DB_NAME || 'Goldenpreneur');
     conn.release();
   })
   .catch(err => {

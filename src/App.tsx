@@ -23,7 +23,7 @@ import TermsConditions from './pages/TermsConditions';
 import RefundCancellation from './pages/RefundCancellation';
 import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
-import VoiceOfGolden preneur from './pages/VoiceOfGolden preneur';
+import VoiceOfGoldenPreneur from './pages/VoiceOfGolden_preneur';
 
 // Admin Pages
 import AdminLogin from './pages/admin/AdminLogin';
@@ -87,7 +87,7 @@ function App() {
           <Route path="blogs/:slug" element={<BlogDetail />} />
 
           {/* Voice of Golden preneur Video Gallery */}
-          <Route path="voice-of-golden preneur" element={<VoiceOfGolden preneur />} />
+          <Route path="voice-of-golden preneur" element={<VoiceOfGoldenPreneur />} />
           
           {/* Voting Page */}
           <Route path="vote/:slug" element={<VoteNominee />} />
