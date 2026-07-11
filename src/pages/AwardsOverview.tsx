@@ -155,25 +155,25 @@ export default function AwardsOverview() {
   const steps = [
     {
       num: '01',
-      title: 'Choose Category',
+      title: 'Vett Segment',
       desc: 'Select from 35+ award categories and MSME excellence tracks. Our scope spans over 148 sectors.',
       icon: Search,
     },
     {
       num: '02',
-      title: 'Submit Story',
+      title: 'File Candidacy',
       desc: 'Fill out our short nomination form. Standard nomination is completely FREE for the Honorary track.',
       icon: Edit,
     },
     {
       num: '03',
-      title: 'Speakers & Jury Review',
+      title: 'Double-Blind Evaluation',
       desc: 'Our panel of judges evaluates entries. Rated track nominees start public voting drives.',
       icon: Scale,
     },
     {
       num: '04',
-      title: 'The Celebration',
+      title: 'The Sovereign Assembly',
       desc: 'Join us on 25th June 2026 at Renaissance by Marriott Ahmedabad to celebrate and receive your trophy.',
       icon: Sparkles,
     },
@@ -181,17 +181,17 @@ export default function AwardsOverview() {
 
   const benefits = [
     {
-      title: 'Media Authority',
+      title: 'Narrative Sovereignty',
       desc: 'Get featured on VyapaarJagat.com with a dedicated pictorial story, local SEO backlinks, and media promotions.',
       icon: Radio,
     },
     {
-      title: 'Legacy Print Feature',
+      title: 'Legacy Compendium Feature',
       desc: 'Secure a permanent page in the premium collector edition "Top 50 Sustainable Leaders" Coffee Table Book.',
       icon: BookOpen,
     },
     {
-      title: 'Elite Business Network',
+      title: 'Sovereign Syndicate Access',
       desc: 'Gain permanent access to the Peers Global Business Network and the MEIF national community.',
       icon: Globe,
     },
@@ -223,13 +223,13 @@ export default function AwardsOverview() {
               href="#journey"
               className="px-8 py-4 btn-premium-primary"
             >
-              Start Your Path
+              Embark on the Vanguard
             </a>
             <a
               href="#tracks"
               className="px-8 py-4 btn-premium-secondary"
             >
-              Compare Tracks
+              Verify Evaluation Tracks
             </a>
           </div>
         </div>
@@ -240,10 +240,10 @@ export default function AwardsOverview() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-primary-green font-bold tracking-[0.4em] uppercase text-[10px] mb-4 block">
-              Valuation Board
+              Adjudication Syndicate
             </span>
             <h2 className="text-4xl sm:text-5xl font-playfair font-bold text-dark-green mb-4">
-              Speakers & Jury Panel 2026
+              Council of Laureates & Jury 2026
             </h2>
             <p className="text-gray-500 text-sm max-w-xl mx-auto font-light leading-relaxed">
               Meet the distinguished experts, sustainability leaders, and policy makers evaluation panel of Golden preneur Awards 2026.

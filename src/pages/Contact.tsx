@@ -43,13 +43,13 @@ export default function Contact() {
 
         <div className="relative z-10 max-w-4xl mx-auto">
           <span className="text-accent-gold font-bold tracking-widest uppercase text-xs mb-4 block">
-            Connect with our leadership
+            Initiate Dialogue with the Vanguard
           </span>
           <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl text-pure-white font-bold mb-6">
             Let's Build a Greener <br /> Future Together
           </h1>
           <p className="text-pure-white/80 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Have a question about nominations, sponsorship tiers, or stall bookings? Our coordinators are here to guide you.
+            Seek collaboration parameters, nomination frameworks, or strategic sponsorship alignments. Our executive team is at your disposal.
           </p>
         </div>
       </section>
@@ -76,10 +76,10 @@ export default function Contact() {
                 Dr. Pravin Parmar
               </h3>
               <p className="text-accent-gold font-semibold uppercase tracking-wider text-[10px] mb-4">
-                Founder — MEIF NGO
+                Grand Chancellor — MEIF Syndicate
               </p>
               <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
-                "Golden preneur is more than an event; it's a commitment to India's sustainable growth. Join our national mission."
+                "Golden preneur is a covenant to safeguard India's biological and economic future. Convene with us to realize this trajectory."
               </p>
               <div className="grid grid-cols-2 gap-3 w-full">
                 <a
@@ -115,7 +115,7 @@ export default function Contact() {
                 Vishal Parmar
               </h3>
               <p className="text-accent-gold font-semibold uppercase tracking-wider text-[10px] mb-4">
-                Director — Peers Global
+                Managing Patron — Peers Global Syndicate
               </p>
               <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
                 Contact directly for corporate sponsorships, exhibition stall bookings, and leadership event registrations.

@@ -334,13 +334,13 @@ export default function Home() {
             </div>
 
             <h1 className="font-playfair text-4xl sm:text-6xl md:text-7xl font-black text-pure-white mb-6 leading-[1.1] tracking-tight">
-              Empowering <span className="text-gold-metallic italic">Green</span> <br />
-              Entrepreneurs for <br />
-              <span className="text-gold-metallic">Viksit Bharat</span>
+              Architecting <span className="text-gold-metallic italic">Sustainable</span> <br />
+              Ascendancy: The Golden <br />
+              <span className="text-gold-metallic">Preneur Vanguard</span>
             </h1>
 
             <p className="text-base sm:text-lg text-pure-white/80 mb-10 font-normal leading-relaxed max-w-2xl font-inter">
-              India's premier digital hub uniting youth entrepreneurship, ecological innovation, and national pride. We accelerate eco-conscious business builders aligned with the 17 UN SDGs to shape a developed, net-zero nation by 2047.
+              India's elite platform for ecological avant-garde. We elevate earth-first business architects and circular economy visionaries aligned with the UN SDGs, accelerating our collective ascent toward a developed, carbon-negative nation by 2047.
             </p>
 
             <div className="flex flex-wrap items-center gap-5 mb-10">
@@ -348,20 +348,20 @@ export default function Home() {
                 to="/awards/apply"
                 className="px-8 py-4 bg-gold-metallic text-dark-green font-black text-xs uppercase tracking-[0.2em] flex items-center gap-3 shadow-md hover:shadow-gold-lux hover:scale-102 hover:-translate-y-0.5 transition-all group rounded-lg"
               >
-                Nominate Your Startup
+                Submit Your Candidacy
                 <Award className="w-4.5 h-4.5 group-hover:rotate-12 transition-transform" />
               </Link>
               <Link
                 to="/event-2026"
                 className="px-8 py-4 border border-[#B38728] text-[#B38728] font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#B38728]/10 transition-all rounded-lg"
               >
-                Get Delegate Pass
+                Secure Delegate Credentials
               </Link>
               <Link
                 to="/community#join-form"
                 className="px-8 py-4 border border-[#B38728] text-[#B38728] font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#B38728]/10 transition-all rounded-lg"
               >
-                Join Our Community
+                Enter the Alliance
               </Link>
             </div>
 
@@ -733,10 +733,10 @@ export default function Home() {
             {/* Counters */}
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
-                {label: 'Trees Planted', val: metrics.trees, color: '#0B5B3E', unit: 'Young Trees Planted', icon: Trees, shadow: 'glow-indian-green'},
+                {label: 'Forest Rejuvation (Stems)', val: metrics.trees, color: '#0B5B3E', unit: 'Young Forest Rejuvation (Stems)', icon: Trees, shadow: 'glow-indian-green'},
                 { label: 'Carbon Saved', val: metrics.co2, color: '#B38728', unit: 'Tons Saved', icon: Globe, shadow: 'shadow-gold-lux' },
                 { label: 'Waste Recycled', val: metrics.waste, color: '#AB833C', unit: 'Tons Recycled', icon: RefreshCw, shadow: '' },
-                { label: 'Green Jobs Created', val: metrics.jobs, color: '#0C1B33', unit: 'Careers Started', icon: Users, shadow: 'glow-ashoka-navy' }
+                { label: 'Generative Livelihoods', val: metrics.jobs, color: '#0C1B33', unit: 'Careers Started', icon: Users, shadow: 'glow-ashoka-navy' }
               ].map((m, idx) => {
                 const IconComp = m.icon;
                 return (

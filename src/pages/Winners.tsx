@@ -107,13 +107,13 @@ export default function Winners() {
 
         <div className="max-w-4xl mx-auto relative z-10">
           <div className="inline-flex items-center gap-2 bg-accent-gold/25 text-accent-gold border border-accent-gold/30 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            Hall of Fame
+            Registry of Laureates
           </div>
           <h1 className="text-pure-white text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6">
-            Past Award Winners
+            The Laureates Archive
           </h1>
           <p className="text-pure-white/70 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-            Honouring the sustainability architects, circular visionaries, and green business pioneers of India.
+            Celebrating the visionary architects of ecological resurgence and green industrial leadership across the nation.
           </p>
 
           <div className="relative max-w-2xl mx-auto shadow-2xl rounded-xl mt-8">

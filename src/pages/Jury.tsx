@@ -119,13 +119,13 @@ export default function Jury() {
 
         <div className="max-w-4xl mx-auto relative z-10">
           <div className="inline-flex items-center gap-2 bg-[#2E7D32]/20 text-[#81C784] border border-[#2E7D32]/30 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            <Users className="w-4 h-4" /> Valuation Board
+            <Users className="w-4 h-4" /> Adjudication Syndicate
           </div>
           <h1 className="text-pure-white text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6">
-            Speakers & Jury of the Year
+            Council of Laureates & Advisory
           </h1>
           <p className="text-pure-white/70 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-            Meet the distinguished experts, sustainability leaders, and policy makers evaluation panel of Golden preneur Awards 2026.
+            Meet the distinguished experts, sustainability architects, and policy visionaries steering the double-blind adjudication of the Golden preneur Awards 2026.
           </p>
 
           <div className="relative max-w-2xl mx-auto shadow-2xl rounded-xl mt-8">

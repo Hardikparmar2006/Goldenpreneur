@@ -84,14 +84,14 @@ export default function AwardCategories() {
 
         <div className="max-w-4xl mx-auto relative z-10">
           <span className="inline-block px-4 py-1.5 rounded-full bg-accent-gold text-dark-green text-[10px] font-bold uppercase tracking-widest mb-6 shadow-lg">
-            Recognising Excellence
+            Honoring Industrial Audacity
           </span>
           <h1 className="text-4xl md:text-6xl font-playfair font-bold text-pure-white mb-6 leading-tight">
-            148+ Categories. <br />
-            <span className="text-accent-gold">Find Yours.</span>
+            148+ Segments. <br />
+            <span className="text-accent-gold">Vett Yours.</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-green-100/70 max-w-2xl mx-auto font-inter">
-            The Golden preneur Awards cover every corner of the eco-economy. From innovation in energy to grassroots conservation, your impact belongs on our national stage.
+            The Golden preneur Awards scan the entire ecological economy. From advanced energy grids to terrestrial conservation, your impact deserves sovereign recognition.
           </p>
         </div>
       </header>

@@ -105,7 +105,7 @@ export default function Community() {
 
   const benefits = [
     {
-      title: 'Monthly Green Conclaves',
+      title: 'Sovereign Monthly Assemblies',
       desc: 'Exclusive access to virtual and offline panels discussing sustainability regulations, policy changes, and circular systems.',
     },
     {
@@ -117,15 +117,15 @@ export default function Community() {
       desc: 'Get your business story drafted and published on VyapaarJagat.com, amplifying your organic search presence.',
     },
     {
-      title: 'Stall & Ad Discounts',
+      title: 'Exhibitor Allocations',
       desc: 'Get up to 20% discount on exhibition stalls at the annual mega conclave and printed ads in the Coffee Table Book.',
     },
     {
-      title: 'Investor Matchmaking',
+      title: 'Impact Venture Alignment',
       desc: 'Pitch opportunities to impact funds, ESG private equity firms, and corporate sustainability heads.',
     },
     {
-      title: 'Peer Learning Circle',
+      title: 'Vanguard Knowledge Exchange',
       desc: 'Join a verified network of 500+ Indian green entrepreneurs solving circular supply chain and raw material issues.',
     },
     {
@@ -159,10 +159,10 @@ export default function Community() {
             Peers Global Network
           </div>
           <h1 className="text-4xl sm:text-6xl font-playfair font-bold mb-6">
-            Join India's Green Business Community
+            Ascend with India's Premier Ecological Syndicate
           </h1>
           <p className="text-pure-white/70 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto mb-10">
-            A collaborative network of eco-conscious founders, MSMEs, policy advocates, and ESG heads scaling sustainable business models.
+            A prestigious league of circular economy architects, ESG strategists, and visionary founders scaling the future of sustainable enterprise.
           </p>
           <a
             href="#join-form"
@@ -196,7 +196,7 @@ export default function Community() {
               National Story Drive Campaign
             </span>
             <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-dark-green leading-tight">
-              Publishing 1,000 Sustainability Stories
+              Illuminating 1,000 Circular Chronicles
             </h2>
             <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-light">
               In partnership with <strong>VyapaarJagat.com</strong>, we are running a national drive to document and publish the models of 1,000 green entrepreneurs. If you run a startup, community group, or MSME in the environment space, we want to write about you.

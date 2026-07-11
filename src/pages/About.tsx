@@ -46,13 +46,13 @@ export default function About() {
 
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-accent-gold/20 text-accent-gold border border-accent-gold/30 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            Our Legacy
+            Our Ancestry
           </div>
           <h1 className="text-4xl sm:text-6xl font-playfair font-bold mb-6">
-            The Golden preneur Story
+            The Chronicle of Golden Preneur
           </h1>
           <p className="text-pure-white/70 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-            Celebrating 5 years of identifying, amplifying, and scaling India's most innovative green business leaders.
+            Five years of honoring, elevating, and scaling the visionaries who place ecological integrity at the core of industrial growth.
           </p>
         </div>
       </section>
@@ -93,16 +93,16 @@ export default function About() {
           {/* Main Context */}
           <div className="lg:col-span-7 space-y-6">
             <span className="text-accent-gold font-bold uppercase tracking-[0.3em] text-[10px] block">
-              Who We Are
+              The Vanguard
             </span>
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-dark-green leading-tight">
-              A Noble Movement Driven by Passion & Sustainability
+              A Sovereign Alliance for Ecological Restoration
             </h2>
             <p className="text-gray-600 leading-relaxed font-light text-sm sm:text-base">
-              Golden preneur is not just an award program; it is India's premier network of sustainability-focused business architects. In 2026, we celebrate our <strong>5th year anniversary celebration</strong> at the Renaissance by Marriott Ahmedabad Hotel.
+              Golden preneur is a prestige covenant—an elite circle of visionaries who merge industrial performance with systemic ecological restoration. In 2026, we celebrate our <strong>5th year anniversary celebration</strong> at the Renaissance by Marriott Ahmedabad Hotel.
             </p>
             <p className="text-gray-600 leading-relaxed font-light text-sm sm:text-base">
-              The platform was born from a simple realization: while traditional business awards focus purely on financial top-lines, our environment requires a system that rewards resource efficiency, carbon consciousness, and circular economic principles. Golden preneur fills this gap by validating green businesses through a structured, multi-tier Speakers & jury audit.
+              Traditional benchmarks honor financial scale while discounting systemic environmental debt. Golden preneur exists to celebrate resource productivity and circular integrity, validated through an rigorous, double-blind jury adjudication.
             </p>
             <p className="text-gray-600 leading-relaxed font-light text-sm sm:text-base">
               Over the years, we have brought together innovators in waste management, renewable fuels, organic farming, sustainable textiles, and electric vehicles, creating opportunities for them to meet investors, corporate buyers, and policymakers.
@@ -245,7 +245,7 @@ export default function About() {
                 "Our vision is clear: we want to create a collaborative network where sustainable start-ups and established MSMEs don't operate in silos. By sharing stories and validating carbon-efficient models, we align Indian enterprise with the national agenda of Viksit Bharat @2047. Golden preneur is a dedication to our future generations."
               </p>
               <div className="flex flex-col text-xs text-pure-white/40">
-                <span className="font-bold text-pure-white">Founder, MEIF & VyapaarJagat.com</span>
+                <span className="font-bold text-pure-white">Grand Chancellor, MEIF Syndicate & VyapaarJagat.com</span>
                 <span>Organiser of Golden preneur Mega Events</span>
               </div>
             </div>

@@ -157,9 +157,9 @@ export default function Sponsorship() {
       badge: 'Elite Tier',
       tagline: 'Presented by Your Brand',
       benefits: [
-        'Exclusive Event Naming Rights: Presented By logo lockup',
+        'Supreme Naming Sovereignty: Exclusive Brand Lockup',
         'Logo placement on ALL main backdrops, brochures, trophies',
-        'Keynote speaking slot (15 mins) during main summit',
+        'Plenary Address (15 Mins) during the Main Summit',
         'Full post-event attendee insights and matching logs',
         'Premium full-page feature story in Coffee Table Book',
         'Featured logo in all media drives on VyapaarJagat.com',
@@ -183,12 +183,12 @@ export default function Sponsorship() {
     {
       title: 'Platinum Sponsor',
       price: '₹75,000',
-      badge: 'Major Sponsor',
+      badge: 'Distinguished Patron',
       tagline: 'High Impact Positioning',
       benefits: [
         'Large logo placement on all offline standees and banners',
         'On-stage logo branding slide during award presentation',
-        'VIP delegate passes (6) including premium gala dinner seats',
+        'VIP Laureate Credentials (6) including premium gala dinner seats',
         'Full-page advertisement in Coffee Table Book',
       ],
       isPopular: false,
@@ -201,7 +201,7 @@ export default function Sponsorship() {
       benefits: [
         'Medium logo placement on promotional marketing collaterals',
         'Selected stage branding mentions during awards',
-        'VIP delegate passes (4) with dinners included',
+        'VIP Laureate Credentials (4) with dinners included',
         'Half-page print profile in Coffee Table Book',
       ],
       isPopular: false,
@@ -210,10 +210,10 @@ export default function Sponsorship() {
       title: 'Silver Sponsor',
       price: '₹25,000',
       badge: 'Tier 3 Sponsor',
-      tagline: 'Strategic Alignment',
+      tagline: 'Consensus Alignment',
       benefits: [
         'Standard logo placement on banners and official website',
-        'VIP delegate passes (2) with dinners included',
+        'VIP Laureate Credentials (2) with dinners included',
         'Quarter-page advertisement in Coffee Table Book',
       ],
       isPopular: false,
@@ -275,23 +275,23 @@ export default function Sponsorship() {
             Partnerships 2026
           </div>
           <h1 className="text-4xl md:text-6xl font-bold font-playfair mb-6 leading-tight">
-            Be a Part of India's Green Economy Movement
+            Forge Your Legacy in the New Ecological Paradigm
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-pure-white/70 max-w-xl mx-auto mb-10 leading-relaxed font-light">
-            Highlight your organization's environmental values and build business relations with 500+ green entrepreneurs.
+            Position your enterprise at the vanguard of the circular economy. Amplify your ESG leadership and cultivate high-value alliances with 500+ green pioneers.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#tiers"
               className="px-6 py-3 btn-premium-primary"
             >
-              Explore Tiers
+              Vett Sponsorship Tiers
             </a>
             <a
               href="#contact"
               className="px-6 py-3 btn-premium-secondary"
             >
-              Request Proposal
+              Solicit Prospectus
             </a>
           </div>
         </div>
@@ -736,7 +736,7 @@ export default function Sponsorship() {
                         disabled={isSubmitting}
                         className={`w-full py-3 btn-premium-primary ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                       >
-                        {isSubmitting ? 'Submitting...' : 'Request Proposal'}
+                        {isSubmitting ? 'Submitting...' : 'Solicit Prospectus'}
                       </button>
                     </div>
                   </form>

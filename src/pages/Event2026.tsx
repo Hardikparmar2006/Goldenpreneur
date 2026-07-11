@@ -90,14 +90,14 @@ export default function Event2026() {
   };
 
   const agenda = [
-    { time: '02:00 PM', title: 'Arrival & Golden preneur Celebration', desc: 'Warm welcome, badge distribution, and green networking reception.' },
-    { time: '03:15 PM', title: 'Panel Discussion: Sustainability in Viksit Bharat', desc: 'Dialogues on aligning environmental governance and business ethics with national 2047 goals.' },
-    { time: '04:15 PM', title: 'Coffee Table Book Launch', desc: 'Exclusive unveiling of the premium hardcover book "Top 50 Sustainable Leaders".' },
-    { time: '04:30 PM', title: 'Golden preneur Awards Ceremony', desc: 'Presentation of 35+ prestigious awards honoring eco-industry leaders.' },
-    { time: '05:15 PM', title: 'Peers Global Roundtable Conclave', desc: 'Curated corporate business match-makings and strategy networking for scaling.' },
-    { time: '06:45 PM', title: 'Leadership Ceremony & New Member Welcome', desc: 'Welcoming new Peers Global platform members and setting the 2026 roadmap.' },
-    { time: '07:35 PM', title: 'Peers Global Awards', desc: 'Celebrating cross-sector international business partnerships and excellence.' },
-    { time: '08:45 PM', title: 'Gala Dinner & Live Music', desc: 'Grand eco-friendly dining experience accompanied by live traditional music performances.' },
+    { time: '02:00 PM', title: 'Vanguard Assemblies & Ecological Reception', desc: 'Warm welcome, badge distribution, and green networking reception.' },
+    { time: '03:15 PM', title: 'Sovereign Sustainability: Integrating Business Audacity with Net-Zero 2047 Targets', desc: 'Dialogues on aligning environmental governance and business ethics with national 2047 goals.' },
+    { time: '04:15 PM', title: 'The Chronicles Unveiled: Premiere of 'Top 50 Pioneers of Circular Economy'', desc: 'Exclusive unveiling of the premium hardcover book "Top 50 Sustainable Leaders".' },
+    { time: '04:30 PM', title: 'The Golden Preneur Laureates Ceremony', desc: 'Presentation of 35+ prestigious awards honoring eco-industry leaders.' },
+    { time: '05:15 PM', title: 'Peers Global Synergies: High-Level Circular Capital Matchmaking', desc: 'Curated corporate business match-makings and strategy networking for scaling.' },
+    { time: '06:45 PM', title: 'Vanguard Induction & 2026 Sovereign Roadmap', desc: 'Welcoming new Peers Global platform members and setting the 2026 roadmap.' },
+    { time: '07:35 PM', title: 'The Peers Global Laurels', desc: 'Celebrating cross-sector international business partnerships and excellence.' },
+    { time: '08:45 PM', title: 'Culinary Symphony & Live Traditional Acoustic Recital', desc: 'Grand eco-friendly dining experience accompanied by live traditional music performances.' },
   ];
 
   const audienceTypes = [

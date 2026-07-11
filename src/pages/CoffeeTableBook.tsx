@@ -107,7 +107,7 @@ export default function CoffeeTableBook() {
             </h2>
 
             <p className="text-lg text-dark-green/70 font-playfair leading-relaxed mb-10 max-w-xl italic">
-              "A curated anthology of visionaries redefining India's green economy. A legacy print edition for those who lead by example."
+              "An elite compendium celebrating the vanguard of ecological stewardship and industrial transformation in India. A masterwork print legacy."
             </p>
 
             <div className="grid grid-cols-2 gap-8 mb-12">
@@ -130,13 +130,13 @@ export default function CoffeeTableBook() {
                 href="#apply"
                 className="px-8 py-4 btn-premium-primary"
               >
-                Reserve Your Slot
+                Request Feature Review
               </a>
               <a
                 href="#packages"
                 className="px-8 py-4 btn-premium-secondary"
               >
-                View Packages
+                Examine Tiers
               </a>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function CoffeeTableBook() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="w-16 h-0.5 bg-accent-gold/30 mx-auto mb-10"></div>
           <h3 className="font-playfair text-2xl sm:text-3xl text-dark-green italic leading-normal mb-8 px-4 font-light">
-            "Nomination is FREE. Always. This is our way of celebrating the green entrepreneur. This book is the permanent record of that celebration."
+            "Submitting a candidacy carries no financial barrier. We believe in elevating raw ecological audacity—this book is the definitive archive of that transition."
           </h3>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 rounded-full overflow-hidden mb-3 border-2 border-accent-gold shadow-md">
@@ -185,7 +185,7 @@ export default function CoffeeTableBook() {
             </div>
             <p className="font-bold text-dark-green text-sm">Dr. Pravin Parmar</p>
             <p className="text-[10px] uppercase tracking-widest text-accent-gold font-bold">
-              Founder, MEIF
+              Grand Chancellor, MEIF Syndicate
             </p>
           </div>
         </div>
