@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Send, CheckCircle2 } from 'lucide-react';
 import { submitCommunityApplication, createPaymentOrder } from '../utils/api';
-import AppPromo from '../components/AppPromo';
 
 export default function Community() {
   const [formData, setFormData] = useState({
@@ -222,13 +221,7 @@ export default function Community() {
           </div>
         </div>
       </section>
-      {/* APP INTEGRATION PROMO */}
-      <AppPromo 
-        title="Showcase & Integration Platform" 
-        subtitle="Golden preneur Unity App" 
-        description="Our new mobile app is fully integrated with the main platform. Access real-time notifications, unified account synchronization, and custom networking groups." 
-        integrationFocus={true} 
-      />
+
 
       {/* MEMBERSHIP BENEFITS GRID */}
       <section className="py-20 bg-pure-white border-y border-light-grey">

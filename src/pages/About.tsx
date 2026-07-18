@@ -1,7 +1,6 @@
 import { Award, Users, Globe, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import AppPromo from '../components/AppPromo';
 
 export default function About() {
   const previousEditions = [
@@ -174,13 +173,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* APP PROMO FLOW BREAK */}
-      <AppPromo 
-        title="Your Green Network on the Go" 
-        subtitle="Golden preneur Mobile Experience" 
-        description="Stay connected to the Golden preneur network. Manage your profile, view upcoming events, and access directories anywhere." 
-        integrationFocus={false} 
-      />
+
 
       {/* TIMELINE OF PREVIOUS EDITIONS */}
       <section className="py-24 bg-pure-white border-y border-light-grey">
