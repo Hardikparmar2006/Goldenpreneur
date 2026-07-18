@@ -258,22 +258,12 @@ export default function About() {
               <source src="/hardik-conclave.mp4" type="video/mp4" />
             </video>
 
-            {/* Mobile Trendy Abstract Tech Orbit Background */}
-            <div className="md:hidden absolute inset-0 overflow-hidden bg-gradient-to-b from-[#03130C] via-[#062619] to-[#03130C]">
-              {/* Ambient Glow Orbs */}
-              <div className="absolute -left-20 top-10 w-64 h-64 rounded-full bg-gold-metallic/10 blur-[80px] animate-pulse" style={{ animationDuration: '6s' }}></div>
-              <div className="absolute -right-20 bottom-10 w-64 h-64 rounded-full bg-primary-green/20 blur-[80px] animate-pulse" style={{ animationDuration: '8s' }}></div>
-              
-              {/* Concentric Tech Rings */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] rounded-full border border-gold-metallic/10 border-dashed animate-spin" style={{ animationDuration: '40s' }}></div>
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] rounded-full border border-pure-white/5 animate-spin" style={{ animationDuration: '60s', animationDirection: 'reverse' }}></div>
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] rounded-full border border-gold-metallic/5 border-dashed"></div>
-              
-              {/* Fine tech grid pattern */}
-              <div className="absolute inset-0 opacity-15" style={{ 
-                backgroundImage: 'radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 0)', 
-                backgroundSize: '24px 24px' 
-              }}></div>
+            {/* Mobile Premium Ambient Glow Background */}
+            <div className="md:hidden absolute inset-0 overflow-hidden bg-[#052216]">
+              {/* Soft Golden Corner Ambient Lights */}
+              <div className="absolute -left-16 -top-16 w-64 h-64 rounded-full bg-[#B38728]/15 blur-[90px]"></div>
+              <div className="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-[#B38728]/10 blur-[90px]"></div>
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-primary-green/10 blur-[100px]"></div>
             </div>
 
             {/* Elegant vignette overlay: clear center, fading to dark green edges */}
@@ -368,19 +358,27 @@ export default function About() {
                 </div>
 
                 {/* Right Bento: Vision and Details */}
-                <div className="lg:col-span-8 bg-pure-white/5 border border-pure-white/10 p-5 sm:p-10 rounded-3xl flex flex-col justify-between relative overflow-hidden shadow-xl">
+                <div className="lg:col-span-8 bg-pure-white/5 border border-pure-white/10 p-6 sm:p-10 rounded-3xl flex flex-col justify-between relative overflow-hidden shadow-xl">
                   <div className="absolute -left-16 -bottom-16 w-32 h-32 rounded-full bg-[#0B5B3E]/10 blur-2xl"></div>
                   
+                  {/* Luxury editorial background quote mark */}
+                  <div className="absolute -right-4 -top-8 text-gold-metallic/5 font-playfair text-[180px] leading-none select-none pointer-events-none font-bold">
+                    ”
+                  </div>
+                  
                   <div className="relative z-10">
-                    <span className="text-accent-gold text-[10px] font-bold uppercase tracking-[0.3em] block mb-2">
+                    <span className="text-accent-gold text-[10px] font-bold uppercase tracking-[0.3em] block mb-3">
                       Developer's Vision
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-playfair font-black text-pure-white mb-6">
+                    <h3 className="text-2xl sm:text-3xl font-playfair font-black text-[#FCF6BA] mb-6 text-left">
                       Hardik Parmar
                     </h3>
-                    <p className="text-pure-white/80 text-sm sm:text-base leading-relaxed mb-6 font-light italic">
-                      "My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career."
-                    </p>
+                    
+                    <div className="border-l-2 border-gold-metallic pl-4 my-6">
+                      <p className="text-pure-white/95 text-xs sm:text-sm md:text-base leading-relaxed font-light italic font-inter text-left">
+                        "My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career."
+                      </p>
+                    </div>
                   </div>
 
                   <div className="relative z-10 border-t border-pure-white/10 pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-auto">
