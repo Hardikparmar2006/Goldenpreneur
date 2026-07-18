@@ -110,8 +110,7 @@ export default function Layout() {
 
       {/* Fix 1: Sticky Navigation Header */}
       <nav
-        style={{ height: '72px' }}
-        className={`fixed left-0 w-full z-[1000] bg-pure-white flex items-center justify-between px-4 lg:px-10 transition-all duration-300 ${
+        className={`fixed left-0 w-full z-[1000] bg-pure-white flex items-center justify-between px-4 lg:px-10 h-[60px] lg:h-[76px] transition-all duration-300 ${
           bannerVisible ? 'top-10' : 'top-0'
         } ${scrolled ? 'shadow-[0_4px_20px_rgba(0,0,0,0.06)]' : ''}`}
       >
@@ -119,8 +118,14 @@ export default function Layout() {
         <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gold-metallic"></div>
 
         {/* Logo */}
-        <Link to="/" className="flex items-center shrink-0" style={{ textDecoration: 'none', cursor: 'pointer', gap: '10px' }}>
-          <img src="/logo-gold.png" alt="Golden preneur" className="h-[38px] md:h-[44px] w-auto object-contain" />
+        {/* Desktop Logo */}
+        <Link to="/" className="hidden lg:flex items-center shrink-0" style={{ textDecoration: 'none', cursor: 'pointer', gap: '10px' }}>
+          <img src="/logo-gold.png" alt="Golden preneur" className="h-[44px] w-auto object-contain" />
+        </Link>
+
+        {/* Mobile Centered Logo */}
+        <Link to="/" className="lg:hidden absolute left-1/2 -translate-x-1/2 flex items-center justify-center" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+          <img src="/logo-gold.png" alt="Golden preneur" className="h-[46px] w-auto object-contain" />
         </Link>
 
         {/* Desktop Center Nav Links (reduced gap to prevent overflow) */}
@@ -324,7 +329,7 @@ export default function Layout() {
         {/* Hamburger Menu (Mobile) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-primary-green hover:scale-105 transition-all focus:outline-none cursor-pointer"
+          className="lg:hidden text-primary-green hover:scale-105 transition-all focus:outline-none cursor-pointer ml-auto"
           aria-label="Toggle Navigation"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -504,7 +509,7 @@ export default function Layout() {
       </div>
 
       {/* Page Content Body */}
-      <main className={`flex-grow ${bannerVisible ? 'pt-[112px]' : 'pt-[72px]'} pb-16 lg:pb-0 transition-all duration-300`}>
+      <main className={`flex-grow ${bannerVisible ? 'pt-[100px] lg:pt-[116px]' : 'pt-[60px] lg:pt-[76px]'} pb-16 lg:pb-0 transition-all duration-300`}>
         <Outlet />
       </main>
 
