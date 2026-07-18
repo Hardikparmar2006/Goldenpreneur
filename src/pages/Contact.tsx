@@ -58,7 +58,7 @@ export default function Contact() {
       <section className="relative z-20 -mt-10 px-6">
         <div className="max-w-md mx-auto">
           {/* Hardik Parmar */}
-          <div className="bg-pure-white rounded-3xl p-8 shadow-xl border border-light-grey flex flex-col items-center text-center hover:translate-y-[-4px] transition-all duration-300 group">
+          <div className="bg-pure-white rounded-3xl p-5 sm:p-8 shadow-xl border border-light-grey flex flex-col items-center text-center hover:translate-y-[-4px] transition-all duration-300 group">
             <div className="relative mb-6">
               <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-cream-white shadow-md bg-white">
                 <img
@@ -80,7 +80,7 @@ export default function Contact() {
             <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
               Contact directly for web development, technical inquiries, and digital solution alignment.
             </p>
-            <div className="grid grid-cols-2 gap-3 w-full">
+            <div className="flex flex-col sm:grid sm:grid-cols-2 gap-3 w-full">
               <a
                 href="tel:+919558739086"
                 className="py-3 btn-premium-primary"

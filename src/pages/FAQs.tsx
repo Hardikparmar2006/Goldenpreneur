@@ -215,24 +215,24 @@ export default function FAQs() {
           <div className="inline-flex items-center gap-2 bg-accent-gold/25 text-accent-gold border border-accent-gold/30 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
             Support Center
           </div>
-          <h1 className="text-pure-white text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6">
+          <h1 className="text-pure-white text-3xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6">
             How Can We Help You?
           </h1>
-          <p className="text-pure-white/70 text-base sm:text-lg font-light mb-10 max-w-2xl mx-auto">
+          <p className="text-pure-white/70 text-xs sm:text-base font-light mb-10 max-w-2xl mx-auto">
             Everything you need to know about India's most comprehensive green entrepreneurship platform.
           </p>
 
           {/* SEARCH BAR */}
           <div className="relative max-w-2xl mx-auto shadow-2xl rounded-xl">
-            <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-medium-grey">
-              <Search className="w-5 h-5 text-accent-gold" />
+            <div className="absolute inset-y-0 left-4 sm:left-5 flex items-center pointer-events-none text-medium-grey">
+              <Search className="w-4 h-4 sm:w-5 sm:h-5 text-accent-gold" />
             </div>
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search for questions like 'nomination fee', 'event date'..."
-              className="w-full bg-pure-white text-dark-text py-5 pl-14 pr-24 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent-gold font-medium text-sm border border-light-grey"
+              placeholder="Search frequently asked questions..."
+              className="w-full bg-pure-white text-dark-text py-4 sm:py-5 pl-10 pr-16 sm:pl-14 sm:pr-24 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent-gold font-medium text-xs sm:text-sm border border-light-grey"
             />
             {searchQuery && (
               <button
@@ -316,7 +316,7 @@ export default function FAQs() {
                       >
                         <button
                           onClick={() => toggleAccordion(faq.id)}
-                          className="w-full text-left p-6 flex items-center justify-between text-base font-bold text-dark-green select-none"
+                          className="w-full text-left p-4 sm:p-6 flex items-center justify-between text-base font-bold text-dark-green select-none"
                         >
                           <div className="flex items-center gap-3">
                             {isCrucial && (
@@ -336,7 +336,7 @@ export default function FAQs() {
                         {/* Smooth collapse container */}
                         <div
                           className={`transition-all duration-300 ease-in-out ${
-                            isOpen ? 'max-h-[1000px] border-t border-light-grey/50 p-6' : 'max-h-0 overflow-hidden'
+                            isOpen ? 'max-h-[1000px] border-t border-light-grey/50 p-4 sm:p-6' : 'max-h-0 overflow-hidden'
                           }`}
                         >
                           <div className="text-xs sm:text-sm text-gray-600 leading-relaxed font-light">

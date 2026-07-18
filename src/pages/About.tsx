@@ -264,7 +264,7 @@ export default function About() {
           <motion.div 
             layout 
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="p-8 sm:p-16 relative z-10 flex flex-col items-center justify-center text-center w-full"
+            className="p-4 sm:p-16 relative z-10 flex flex-col items-center justify-center text-center w-full"
           >
             {!isProfileExpanded ? (
               // Initial State: Trendy 3D-effect VIP Card Cover
@@ -277,7 +277,7 @@ export default function About() {
                   rotateX: -5,
                   boxShadow: "0px 25px 50px rgba(179, 135, 40, 0.25)"
                 }}
-                className="cursor-pointer group relative w-72 h-[430px] rounded-3xl overflow-hidden border border-gold-metallic/35 bg-[#062216] shadow-2xl flex flex-col justify-between p-6 transition-all duration-300"
+                className="cursor-pointer group relative w-full max-w-[250px] sm:w-72 h-[430px] rounded-3xl overflow-hidden border border-gold-metallic/35 bg-[#062216] shadow-2xl flex flex-col justify-between p-6 transition-all duration-300"
                 style={{ perspective: 1000 }}
               >
                 {/* Glowing neon aura behind */}
@@ -348,7 +348,7 @@ export default function About() {
                 </div>
 
                 {/* Right Bento: Vision and Details */}
-                <div className="lg:col-span-8 bg-pure-white/5 border border-pure-white/10 p-8 sm:p-10 rounded-3xl flex flex-col justify-between relative overflow-hidden shadow-xl">
+                <div className="lg:col-span-8 bg-pure-white/5 border border-pure-white/10 p-5 sm:p-10 rounded-3xl flex flex-col justify-between relative overflow-hidden shadow-xl">
                   <div className="absolute -left-16 -bottom-16 w-32 h-32 rounded-full bg-[#0B5B3E]/10 blur-2xl"></div>
                   
                   <div className="relative z-10">
