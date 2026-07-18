@@ -250,9 +250,9 @@ export default function About() {
                 <div className="absolute -inset-4 border-2 border-accent-gold/30 rounded-full"></div>
                 <div className="w-48 h-48 rounded-full border-4 border-accent-gold shadow-lg overflow-hidden bg-white">
                   <img
-                    src="/pravin.png"
-                    alt="Dr. Pravin Parmar"
-                    className="w-full h-full object-cover scale-[1.7] origin-[50%_40%]"
+                    src="/hardik.jpg"
+                    alt="Hardik Parmar"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -260,17 +260,17 @@ export default function About() {
             
             <div className="lg:col-span-8">
               <span className="text-accent-gold text-[10px] font-bold uppercase tracking-[0.3em] block mb-2">
-                Founder's Vision
+                Developer's Vision
               </span>
               <h3 className="text-2xl sm:text-3xl font-playfair font-bold mb-6">
-                Dr. Pravin Parmar
+                Hardik Parmar
               </h3>
-              <p className="text-pure-white/80 text-sm sm:text-base leading-relaxed mb-6 font-light italic">
-                "Our vision is clear: we want to create a collaborative network where sustainable start-ups and established MSMEs don't operate in silos. By sharing stories and validating carbon-efficient models, we align Indian enterprise with the national agenda of Viksit Bharat @2047. Golden preneur is a dedication to our future generations."
+              <p className="text-pure-white/85 text-sm sm:text-base leading-relaxed mb-6 font-light italic">
+                "My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career."
               </p>
-              <div className="flex flex-col text-xs text-pure-white/40">
-                <span className="font-bold text-pure-white">Grand Chancellor, MEIF Syndicate & VyapaarJagat.com</span>
-                <span>Organiser of Golden preneur Mega Events</span>
+              <div className="flex flex-col text-xs text-pure-white/40 gap-1">
+                <span className="font-bold text-pure-white">Laravel • WordPress • Zoho Developer</span>
+                <span>B.Tech Computer Engineering | Silver Oak University</span>
               </div>
             </div>
           </div>
