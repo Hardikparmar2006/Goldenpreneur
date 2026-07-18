@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { getNominationCount } from '../utils/api';
 // import AppPopup from './AppPopup';
 
@@ -789,19 +789,6 @@ export default function Layout() {
         </Link>
       </div>
 
-      {/* Fix 4: WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/917041151714"
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-[80px] right-6 md:bottom-6 md:right-6 z-50 bg-[#25D366] text-pure-white w-14 h-14 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all flex items-center justify-center group"
-        title="Chat with us"
-      >
-        <MessageCircle className="w-7 h-7" />
-        <span className="absolute right-16 bg-pure-white text-dark-text text-xs font-semibold px-3 py-1.5 rounded-md shadow-md border border-light-grey opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
-          Chat with us
-        </span>
-      </a>
 
       {/* <AppPopup /> */}
     </div>
