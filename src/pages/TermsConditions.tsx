@@ -269,7 +269,7 @@ export default function TermsConditions() {
           </section>
 
           <p className="text-xs text-medium-grey border-t border-gray-100 pt-6">
-            For any questions or formal complaints, please reach out to us at <a href="mailto:hello@goldenpreneur.in" className="text-primary hover:underline font-semibold">hello@goldenpreneur.in</a>.
+            For any questions or formal complaints, please reach out to us at <a href="mailto:hardikpparmar2006@gmail.com" className="text-primary hover:underline font-semibold">hardikpparmar2006@gmail.com</a>.
           </p>
         </div>
       </main>

@@ -63,7 +63,7 @@ export default function RefundCancellation() {
               </p>
             </div>
             <p className="text-sm">
-              If you submit a membership or listing subscription request and decide to cancel, please notify us immediately at <a href="mailto:hello@goldenpreneur.in" className="text-primary hover:underline font-semibold">hello@goldenpreneur.in</a>. If the request has not yet been processed and accepted by our team, we will cancel the request. Once accepted and processed, cancellations will not be eligible for refunds.
+              If you submit a membership or listing subscription request and decide to cancel, please notify us immediately at <a href="mailto:hardikpparmar2006@gmail.com" className="text-primary hover:underline font-semibold">hardikpparmar2006@gmail.com</a>. If the request has not yet been processed and accepted by our team, we will cancel the request. Once accepted and processed, cancellations will not be eligible for refunds.
             </p>
           </section>
 
@@ -84,7 +84,7 @@ export default function RefundCancellation() {
           </section>
 
           <p className="text-xs text-medium-grey border-t border-gray-100 pt-6">
-            If you have any questions regarding your transaction or wish to request a pass transfer, please contact our secretariat at <a href="mailto:hello@goldenpreneur.in" className="text-primary hover:underline font-semibold">hello@goldenpreneur.in</a>.
+            If you have any questions regarding your transaction or wish to request a pass transfer, please contact our secretariat at <a href="mailto:hardikpparmar2006@gmail.com" className="text-primary hover:underline font-semibold">hardikpparmar2006@gmail.com</a>.
           </p>
         </div>
       </main>

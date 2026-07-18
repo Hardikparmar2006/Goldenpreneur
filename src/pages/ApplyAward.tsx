@@ -282,7 +282,7 @@ export default function ApplyAward() {
           </div>
 
           <p className="text-sm text-medium-grey mb-8">
-            Our nominations steering team will verify your impact metrics and reach out to you on WhatsApp (+91 70411 51714) within 48 hours with creatives or verification credentials.
+            Our nominations steering team will verify your impact metrics and reach out to you on WhatsApp (+91 95587 39086) within 48 hours with creatives or verification credentials.
           </p>
 
           <div className="flex justify-center">
@@ -523,7 +523,7 @@ export default function ApplyAward() {
                     className={`w-full px-4 py-3 bg-cream-white/50 border rounded-lg focus:bg-pure-white focus:ring-2 focus:ring-primary-green/20 outline-none transition-all text-sm ${
                       errors.email ? 'border-alert-red' : 'border-light-grey'
                     }`}
-                    placeholder="hello@goldenpreneur.in"
+                    placeholder="hardikpparmar2006@gmail.com"
                   />
                   {errors.email && (
                     <span className="text-[10px] text-alert-red flex items-center gap-1">
@@ -984,7 +984,7 @@ export default function ApplyAward() {
             </p>
           </div>
           <a
-            href="https://wa.me/917041151714"
+            href="https://wa.me/919558739086"
             target="_blank"
             rel="noreferrer"
             className="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-pure-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#1fae53] transition-all shadow-md"

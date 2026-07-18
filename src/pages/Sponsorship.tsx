@@ -602,8 +602,8 @@ export default function Sponsorship() {
                     <span className="text-[12px] uppercase tracking-widest text-pure-white/40 block">
                       Partnership Lead
                     </span>
-                    <span className="font-bold text-sm block">Vishal Parmar (Director)</span>
-                    <span className="text-xs text-pure-white/70">+91 70411 51714</span>
+                    <span className="font-bold text-sm block">Hardik Parmar (Developer)</span>
+                    <span className="text-xs text-pure-white/70">+91 95587 39086</span>
                   </div>
                 </div>
 
@@ -616,10 +616,10 @@ export default function Sponsorship() {
                       Enquiry Email
                     </span>
                     <a
-                      href="mailto:hello@goldenpreneur.in"
+                      href="mailto:hardikpparmar2006@gmail.com"
                       className="font-bold text-sm block hover:underline"
                     >
-                      hello@goldenpreneur.in
+                      hardikpparmar2006@gmail.com
                     </a>
                   </div>
                 </div>
@@ -693,7 +693,7 @@ export default function Sponsorship() {
                           value={formData.phone}
                           onChange={(e) => setFormData((p) => ({ ...p, phone: e.target.value }))}
                           className="w-full px-4 py-2.5 bg-cream-white/50 border border-light-grey rounded-lg text-xs outline-none focus:border-primary-green focus:bg-pure-white"
-                          placeholder="+91 70411 51714"
+                          placeholder="+91 95587 39086"
                         />
                       </div>
                     </div>

@@ -351,7 +351,7 @@ export default function CoffeeTableBook() {
                     value={formData.email}
                     onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
                     className="w-full px-4 py-2.5 bg-black/35 border border-pure-white/20 rounded-lg text-xs outline-none focus:border-accent-gold text-pure-white"
-                    placeholder="hello@goldenpreneur.in"
+                    placeholder="hardikpparmar2006@gmail.com"
                   />
                 </div>
 

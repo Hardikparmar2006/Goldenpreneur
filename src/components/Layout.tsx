@@ -479,11 +479,11 @@ export default function Layout() {
           {/* Bottom metadata and social row */}
           <div className="mt-auto pt-6 border-t border-pure-white/10 flex flex-col gap-4">
             <div className="flex flex-col gap-2 text-xs text-pure-white/70">
-              <a href="tel:+917041151714" className="flex items-center gap-2 hover:text-pure-white transition-colors">
-                <Phone className="w-4 h-4 text-accent-gold" /> +91 70411 51714
+              <a href="tel:+919558739086" className="flex items-center gap-2 hover:text-pure-white transition-colors">
+                <Phone className="w-4 h-4 text-accent-gold" /> +91 95587 39086
               </a>
-              <a href="mailto:hello@goldenpreneur.in" className="flex items-center gap-2 hover:text-pure-white transition-colors">
-                <Mail className="w-4 h-4 text-accent-gold" /> hello@goldenpreneur.in
+              <a href="mailto:hardikpparmar2006@gmail.com" className="flex items-center gap-2 hover:text-pure-white transition-colors">
+                <Mail className="w-4 h-4 text-accent-gold" /> hardikpparmar2006@gmail.com
               </a>
             </div>
 
@@ -730,15 +730,17 @@ export default function Layout() {
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5" />
                   <div className="flex flex-col">
-                    <span className="font-semibold">+91 70411 51714</span>
-                    <span className="text-xs text-pure-white/50">Vishal Parmar (Director)</span>
+                    <a href="tel:+919558739086" className="font-semibold hover:text-pure-white transition-colors">
+                      +91 95587 39086
+                    </a>
+                    <span className="text-xs text-pure-white/50">Hardik Parmar (Developer)</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5" />
                   <div className="flex flex-col">
-                    <a href="mailto:hello@goldenpreneur.in" className="font-semibold hover:text-pure-white transition-colors">
-                      hello@goldenpreneur.in
+                    <a href="mailto:hardikpparmar2006@gmail.com" className="font-semibold hover:text-pure-white transition-colors">
+                      hardikpparmar2006@gmail.com
                     </a>
                     <span className="text-xs text-pure-white/50">Official Inquiries</span>
                   </div>

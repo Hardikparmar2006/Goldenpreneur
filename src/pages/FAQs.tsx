@@ -152,7 +152,7 @@ export default function FAQs() {
     {
       id: 'can-exhibit',
       question: 'Can I exhibit at the event?',
-      answer: 'Yes! We have 25+ exhibition stalls available. We offer two sizes: Standard (6x6 ft) and Premium (10x10 ft). Please contact Vishal Parmar (+91 70411 51714) for pricing and booking.',
+      answer: 'Yes! We have 25+ exhibition stalls available. We offer two sizes: Standard (6x6 ft) and Premium (10x10 ft). Please contact Hardik Parmar (+91 95587 39086) for pricing and booking.',
       category: 'event',
     },
     {
@@ -369,7 +369,7 @@ export default function FAQs() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a
-                href="https://wa.me/917041151714?text=Hi,%20I'm%20having%20some%20queries%20about%20Golden preneur%202026"
+                href="https://wa.me/919558739086?text=Hi,%20I'm%20having%20some%20queries%20about%20Golden preneur%202026"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-pure-white px-8 py-4 rounded-lg font-bold text-xs uppercase tracking-widest hover:shadow-lg hover:-translate-y-0.5 transition-all"
@@ -378,7 +378,7 @@ export default function FAQs() {
                 Chat on WhatsApp
               </a>
               <a
-                href="mailto:hello@goldenpreneur.in"
+                href="mailto:hardikpparmar2006@gmail.com"
                 className="inline-flex items-center justify-center gap-3 bg-pure-white/10 text-pure-white px-8 py-4 rounded-lg font-bold text-xs uppercase tracking-widest border border-pure-white/20 hover:bg-pure-white/20 transition-all"
               >
                 <Mail className="w-5 h-5" />

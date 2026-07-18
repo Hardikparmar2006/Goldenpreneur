@@ -354,7 +354,7 @@ export default function Event2026() {
                     value={formData.phone}
                     onChange={(e) => setFormData((p) => ({ ...p, phone: e.target.value }))}
                     className="w-full px-4 py-2.5 bg-pure-white border border-light-grey rounded-lg text-xs outline-none focus:border-primary-green focus:ring-2 focus:ring-primary-green/10"
-                    placeholder="e.g. +91 70411 51714"
+                    placeholder="e.g. +91 95587 39086"
                   />
                 </div>
 
@@ -368,7 +368,7 @@ export default function Event2026() {
                     value={formData.email}
                     onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
                     className="w-full px-4 py-2.5 bg-pure-white border border-light-grey rounded-lg text-xs outline-none focus:border-primary-green focus:ring-2 focus:ring-primary-green/10"
-                    placeholder="hello@goldenpreneur.in"
+                    placeholder="hardikpparmar2006@gmail.com"
                   />
                 </div>
 

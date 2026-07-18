@@ -212,7 +212,7 @@ export default function Community() {
                 Submit My Story Details
               </a>
               <a
-                href="mailto:hello@goldenpreneur.in?subject=Golden preneur Story Drive Inquiry"
+                href="mailto:hardikpparmar2006@gmail.com?subject=Golden preneur Story Drive Inquiry"
                 className="px-6 py-3 btn-premium-secondary"
               >
                 Email Secretariat
