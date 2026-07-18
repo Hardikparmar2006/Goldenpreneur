@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Award, Users, Globe, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function About() {
+  const [isProfileExpanded, setIsProfileExpanded] = useState(false);
   const previousEditions = [
     {
       year: '2025',
@@ -243,37 +245,110 @@ export default function About() {
       {/* LEADERSHIP / FOUNDER MESSAGE */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="bg-dark-green text-pure-white rounded-2xl overflow-hidden shadow-2xl relative">
-          <div className="absolute inset-0 heritage-ornament opacity-5"></div>
-          <div className="grid lg:grid-cols-12 items-center gap-12 p-8 sm:p-16 relative z-10">
-            <div className="lg:col-span-4 flex justify-center">
-              <div className="relative">
-                <div className="absolute -inset-4 border-2 border-accent-gold/30 rounded-full"></div>
-                <div className="w-48 h-48 rounded-full border-4 border-accent-gold shadow-lg overflow-hidden bg-white">
-                  <img
-                    src="/hardik.jpg"
-                    alt="Hardik Parmar"
-                    className="w-full h-full object-cover"
-                  />
+          <div className="absolute inset-0 lottery-overlay opacity-5 pointer-events-none"></div>
+          
+          <motion.div 
+            layout 
+            transition={{ type: "spring", stiffness: 100, damping: 15 }}
+            className="p-8 sm:p-16 relative z-10 flex flex-col items-center justify-center text-center"
+          >
+            {!isProfileExpanded ? (
+              // Initial State: Only photo with a premium card cover
+              <motion.div 
+                layoutId="profile-card"
+                onClick={() => setIsProfileExpanded(true)}
+                className="cursor-pointer group flex flex-col items-center justify-center p-8 bg-pure-white/5 border border-pure-white/10 rounded-2xl max-w-sm w-full hover:border-[#B38728]/50 shadow-2xl transition-all duration-300 relative overflow-hidden"
+              >
+                {/* Decorative border highlight */}
+                <div className="absolute top-0 left-0 w-full h-1.5 bg-gold-metallic"></div>
+                
+                {/* Glowing photo ring */}
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  className="relative mb-6"
+                >
+                  <div className="absolute -inset-2.5 border border-accent-gold/45 rounded-full animate-pulse"></div>
+                  <div className="w-44 h-44 rounded-full border-4 border-accent-gold shadow-2xl overflow-hidden bg-white">
+                    <img
+                      src="/hardik.jpg"
+                      alt="Hardik Parmar"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </motion.div>
+
+                <h3 className="text-xl font-playfair font-bold text-pure-white group-hover:text-accent-gold transition-colors duration-300">
+                  Hardik Parmar
+                </h3>
+                <span className="text-[9px] font-bold uppercase tracking-[0.25em] text-[#B38728] mt-1.5">
+                  Laravel • WordPress • Zoho Developer
+                </span>
+                
+                {/* Prompt button */}
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="mt-6 px-5 py-2.5 bg-gold-metallic text-dark-green text-[10px] font-black uppercase tracking-widest rounded-lg shadow-md"
+                >
+                  View Vision Statement
+                </motion.button>
+              </motion.div>
+            ) : (
+              // Expanded State: Full description page
+              <motion.div 
+                layoutId="profile-card"
+                className="grid lg:grid-cols-12 items-center gap-12 text-left w-full relative animate-fadeIn"
+              >
+                {/* Close Button at top right */}
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsProfileExpanded(false);
+                  }}
+                  className="absolute top-0 right-0 lg:-top-6 lg:-right-4 text-pure-white/40 hover:text-accent-gold transition-colors cursor-pointer bg-pure-white/5 hover:bg-pure-white/10 p-2 rounded-full border border-pure-white/10"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+
+                <div className="lg:col-span-4 flex justify-center">
+                  <div className="relative">
+                    <div className="absolute -inset-4 border-2 border-accent-gold/30 rounded-full"></div>
+                    <div className="w-48 h-48 rounded-full border-4 border-accent-gold shadow-lg overflow-hidden bg-white cursor-pointer" onClick={() => setIsProfileExpanded(false)}>
+                      <img
+                        src="/hardik.jpg"
+                        alt="Hardik Parmar"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            
-            <div className="lg:col-span-8">
-              <span className="text-accent-gold text-[10px] font-bold uppercase tracking-[0.3em] block mb-2">
-                Developer's Vision
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-playfair font-bold mb-6">
-                Hardik Parmar
-              </h3>
-              <p className="text-pure-white/85 text-sm sm:text-base leading-relaxed mb-6 font-light italic">
-                "My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career."
-              </p>
-              <div className="flex flex-col text-xs text-pure-white/40 gap-1">
-                <span className="font-bold text-pure-white">Laravel • WordPress • Zoho Developer</span>
-                <span>B.Tech Computer Engineering | Silver Oak University</span>
-              </div>
-            </div>
-          </div>
+                
+                <div className="lg:col-span-8">
+                  <span className="text-accent-gold text-[10px] font-bold uppercase tracking-[0.3em] block mb-2">
+                    Developer's Vision
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-playfair font-bold mb-6">
+                    Hardik Parmar
+                  </h3>
+                  <p className="text-pure-white/85 text-sm sm:text-base leading-relaxed mb-6 font-light italic">
+                    "My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career."
+                  </p>
+                  <div className="flex flex-col text-xs text-pure-white/40 gap-1">
+                    <span className="font-bold text-pure-white">Laravel • WordPress • Zoho Developer</span>
+                    <span>B.Tech Computer Engineering | Silver Oak University</span>
+                  </div>
+                  <button 
+                    onClick={() => setIsProfileExpanded(false)}
+                    className="mt-6 text-[10px] font-black uppercase tracking-widest text-accent-gold hover:text-pure-white transition-colors flex items-center gap-1.5"
+                  >
+                    ← Collapse Profile
+                  </button>
+                </div>
+              </motion.div>
+            )}
+          </motion.div>
         </div>
       </section>
 
