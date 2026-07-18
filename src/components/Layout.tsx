@@ -120,9 +120,7 @@ export default function Layout() {
 
         {/* Logo */}
         <Link to="/" className="flex items-center shrink-0" style={{ textDecoration: 'none', cursor: 'pointer', gap: '10px' }}>
-          <div className="bg-dark-green px-3.5 py-1.5 rounded-xl border border-gold-metallic/20 flex items-center shadow-sm hover:border-gold-metallic/40 transition-all duration-300">
-            <img src="/logo-gold.png" alt="Golden preneur" className="h-[28px] md:h-[32px] w-auto object-contain" />
-          </div>
+          <img src="/logo-gold.png" alt="Golden preneur" className="h-[38px] md:h-[44px] w-auto object-contain" />
         </Link>
 
         {/* Desktop Center Nav Links (reduced gap to prevent overflow) */}
