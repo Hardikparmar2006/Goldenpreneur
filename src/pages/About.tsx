@@ -362,10 +362,6 @@ export default function About() {
                   <div className="absolute -left-16 -bottom-16 w-32 h-32 rounded-full bg-[#0B5B3E]/10 blur-2xl"></div>
                   
                   {/* Luxury editorial background quote mark */}
-                  <div className="absolute -right-4 -top-8 text-gold-metallic/5 font-playfair text-[180px] leading-none select-none pointer-events-none font-bold">
-                    ”
-                  </div>
-                  
                   <div className="relative z-10">
                     <span className="text-accent-gold text-[10px] font-bold uppercase tracking-[0.3em] block mb-3">
                       Developer's Vision
@@ -375,8 +371,9 @@ export default function About() {
                     </h3>
                     
                     <div className="border-l-2 border-gold-metallic pl-4 my-6">
+                      <span className="text-gold-metallic font-playfair text-3xl font-black block mb-2 select-none">“</span>
                       <p className="text-pure-white/95 text-xs sm:text-sm md:text-base leading-relaxed font-light italic font-inter text-left">
-                        "My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career."
+                        My vision is to bridge technology and business by developing secure, scalable, and user-focused digital solutions. As a Computer Engineering student at Silver Oak University, I specialize in Laravel, WordPress, and Zoho development, constantly enhancing my skills to build applications that create real value. I believe that innovation, continuous learning, and practical problem-solving are the foundation of a successful technology career.
                       </p>
                     </div>
                   </div>
