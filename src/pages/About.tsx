@@ -247,15 +247,35 @@ export default function About() {
         <div className="bg-dark-green text-pure-white rounded-3xl overflow-hidden shadow-2xl relative border border-pure-white/10 min-h-[500px] flex items-center justify-center">
           {/* Cinematic Looped Background Video with Blur & Overlays */}
           <div className="absolute inset-0 z-0">
+            {/* Desktop Only Video */}
             <video 
               autoPlay 
               loop 
               muted 
               playsInline 
-              className="w-full h-full object-cover opacity-60 filter blur-[1px] scale-[1.02]"
+              className="hidden md:block w-full h-full object-cover opacity-60 filter blur-[1px] scale-[1.02]"
             >
               <source src="/hardik-conclave.mp4" type="video/mp4" />
             </video>
+
+            {/* Mobile Trendy Abstract Tech Orbit Background */}
+            <div className="md:hidden absolute inset-0 overflow-hidden bg-gradient-to-b from-[#03130C] via-[#062619] to-[#03130C]">
+              {/* Ambient Glow Orbs */}
+              <div className="absolute -left-20 top-10 w-64 h-64 rounded-full bg-gold-metallic/10 blur-[80px] animate-pulse" style={{ animationDuration: '6s' }}></div>
+              <div className="absolute -right-20 bottom-10 w-64 h-64 rounded-full bg-primary-green/20 blur-[80px] animate-pulse" style={{ animationDuration: '8s' }}></div>
+              
+              {/* Concentric Tech Rings */}
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] rounded-full border border-gold-metallic/10 border-dashed animate-spin" style={{ animationDuration: '40s' }}></div>
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] rounded-full border border-pure-white/5 animate-spin" style={{ animationDuration: '60s', animationDirection: 'reverse' }}></div>
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] rounded-full border border-gold-metallic/5 border-dashed"></div>
+              
+              {/* Fine tech grid pattern */}
+              <div className="absolute inset-0 opacity-15" style={{ 
+                backgroundImage: 'radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 0)', 
+                backgroundSize: '24px 24px' 
+              }}></div>
+            </div>
+
             {/* Elegant vignette overlay: clear center, fading to dark green edges */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#052216_85%)]"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#052216]/10 to-[#052216]/40"></div>
