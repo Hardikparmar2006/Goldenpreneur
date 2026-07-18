@@ -146,7 +146,7 @@ export default function CoffeeTableBook() {
 
             <div className="relative z-10 p-4 bg-pure-white shadow-2xl rounded-sm border-[12px] border-pure-white transform rotate-2 hover:rotate-0 transition-all duration-500 max-w-[320px]">
               <img
-                src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80"
+                src="/coffeetable-book.jpg"
                 alt="Coffee Table Book Mockup"
                 className="w-full h-auto"
               />
