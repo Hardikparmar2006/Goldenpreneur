@@ -344,138 +344,217 @@ export default function Layout() {
         onClick={() => setIsOpen(false)}
       >
         <div
-          className={`absolute top-0 right-0 h-screen w-screen bg-[#0D3D20] text-pure-white shadow-2xl flex flex-col p-6 transition-transform duration-300 overflow-y-auto ${
+          className={`absolute top-0 right-0 h-screen w-screen bg-gradient-to-b from-[#03150d] via-[#052216] to-[#010905] text-pure-white shadow-2xl flex flex-col p-6 transition-transform duration-300 overflow-y-auto ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header in mobile drawer */}
-          <div className="flex items-center justify-between mb-8 pb-4 border-b border-pure-white/10">
-            <Link to="/" className="flex items-center" style={{ textDecoration: 'none', gap: '10px' }} onClick={() => setIsOpen(false)}>
-              {/* Mobile Drawer Logo */}
-              <div className="flex items-center select-none">
-                <img src="/logo-gold.png" alt="Golden preneur" className="h-[32px] w-auto object-contain" />
-              </div>
+          <div className="flex items-center justify-between mb-8 pb-4 border-b border-pure-white/10 shrink-0">
+            <Link to="/" className="flex items-center" style={{ textDecoration: 'none' }} onClick={() => setIsOpen(false)}>
+              <img src="/logo-gold.png" alt="Golden preneur" className="h-[36px] w-auto object-contain" />
             </Link>
-            <button onClick={() => setIsOpen(false)} className="text-pure-white hover:scale-110 transition-all cursor-pointer">
-              <X className="w-6 h-6" />
+            <button 
+              onClick={() => setIsOpen(false)} 
+              className="text-pure-white hover:scale-110 active:scale-95 transition-all p-2 rounded-full bg-pure-white/5 border border-pure-white/10 cursor-pointer"
+            >
+              <X className="w-5 h-5" />
             </button>
           </div>
 
-          {/* Links list */}
-          <div className="flex flex-col text-left font-inter text-[18px]">
-            <NavLink to="/" onClick={() => setIsOpen(false)} className="py-4 border-b border-pure-white/10 text-pure-white hover:text-accent-gold transition-colors font-bold uppercase">
-              HOME
-            </NavLink>
-            <NavLink to="/about" onClick={() => setIsOpen(false)} className="py-4 border-b border-pure-white/10 text-pure-white hover:text-accent-gold transition-colors font-bold uppercase">
-              ABOUT
-            </NavLink>
+          {/* Trendy Bento Grid Navigation Menu */}
+          <div className="grid grid-cols-2 gap-4 font-inter shrink-0">
+            {/* HOME: Full width bento card */}
+            <Link 
+              to="/" 
+              onClick={() => setIsOpen(false)}
+              className="col-span-2 bg-gradient-to-r from-gold-metallic/15 to-transparent border border-gold-metallic/30 p-4 rounded-2xl flex items-center justify-between hover:border-gold-metallic/50 transition-all duration-300"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-xl bg-gold-metallic/10 border border-gold-metallic/20 flex items-center justify-center text-accent-gold">
+                  <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                </div>
+                <div className="text-left">
+                  <span className="block text-[14px] font-black tracking-wider uppercase text-pure-white">Home</span>
+                  <span className="block text-[9px] text-pure-white/40 font-semibold tracking-wide">Return to Landing Page</span>
+                </div>
+              </div>
+              <span className="text-accent-gold font-bold text-sm">→</span>
+            </Link>
 
-            {/* Expandable EVENT & AWARDS */}
-            <div className="flex flex-col border-b border-pure-white/10">
+            {/* ABOUT: Square bento card */}
+            <Link 
+              to="/about" 
+              onClick={() => setIsOpen(false)}
+              className="bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl flex flex-col justify-between items-start text-left min-h-[110px] hover:border-gold-metallic/30 transition-all duration-300"
+            >
+              <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold mb-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              </div>
+              <div>
+                <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">About</span>
+                <span className="block text-[8px] text-pure-white/30 tracking-wide font-medium mt-0.5">Legacy &amp; Vision</span>
+              </div>
+            </Link>
+
+            {/* WINNERS: Square bento card */}
+            <Link 
+              to="/winners" 
+              onClick={() => setIsOpen(false)}
+              className="bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl flex flex-col justify-between items-start text-left min-h-[110px] hover:border-gold-metallic/30 transition-all duration-300"
+            >
+              <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold mb-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+              </div>
+              <div>
+                <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">Winners</span>
+                <span className="block text-[8px] text-pure-white/30 tracking-wide font-medium mt-0.5">Pioneers List</span>
+              </div>
+            </Link>
+
+            {/* EVENT & AWARDS: Expandable card */}
+            <div className="col-span-2 bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl hover:border-gold-metallic/30 transition-all duration-300">
               <button
                 onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                className="w-full flex items-center justify-between py-4 hover:text-accent-gold transition-colors text-left font-bold text-pure-white text-[18px] uppercase"
+                className="w-full flex items-center justify-between text-left focus:outline-none cursor-pointer"
               >
-                <span>EVENT & AWARDS</span>
-                <span className={`text-xs transform transition-transform duration-200 ${mobileDropdownOpen ? 'rotate-185' : ''}`}>▼</span>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold">
+                    <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  </div>
+                  <div>
+                    <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">Event &amp; Awards</span>
+                    <span className="block text-[8px] text-pure-white/30 mt-0.5 font-medium">Conclave &amp; Nominations</span>
+                  </div>
+                </div>
+                <span className={`text-[10px] text-pure-white/40 transform transition-transform duration-200 ${mobileDropdownOpen ? 'rotate-180' : ''}`}>▼</span>
               </button>
 
-              <div className={`pl-4 flex flex-col gap-3 overflow-hidden transition-all duration-300 ${mobileDropdownOpen ? 'max-h-[350px] py-2' : 'max-h-0'}`}>
-                <Link to="/event-2026" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white">
-                  → Event Overview
+              <div className={`grid grid-cols-2 gap-2 overflow-hidden transition-all duration-300 ${mobileDropdownOpen ? 'max-h-[300px] mt-3 pt-3 border-t border-pure-white/5' : 'max-h-0'}`}>
+                <Link to="/event-2026" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-semibold text-pure-white/80 hover:text-accent-gold">
+                  Event Overview
                 </Link>
-                <a href="/event-2026#agenda" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white">
-                  → Event Agenda
+                <a href="/event-2026#agenda" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-semibold text-pure-white/80 hover:text-accent-gold">
+                  Event Agenda
                 </a>
-                <Link to="/awards/categories" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white">
-                  → Award Categories
+                <Link to="/awards/categories" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-semibold text-pure-white/80 hover:text-accent-gold">
+                  Award Categories
                 </Link>
-                <Link to="/awards/overview" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white">
-                  → How to Nominate
+                <Link to="/awards/overview" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-semibold text-pure-white/80 hover:text-accent-gold">
+                  How to Nominate
                 </Link>
-                <a href="/awards/overview#jury" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white">
-                  → Speakers & Jury Panel 2026
-                </a>
-                <a href="/awards/overview#why-attend" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white">
-                  → Why Attend
-                </a>
-                <Link to="/sponsors/opportunities" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → Sponsors
+                <Link to="/sponsors/opportunities" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-bold text-accent-gold hover:text-pure-white">
+                  Sponsors
                 </Link>
-                <Link to="/coffee-table-book" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → The Book
+                <Link to="/coffee-table-book" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-bold text-accent-gold hover:text-pure-white">
+                  The Book
                 </Link>
               </div>
             </div>
 
-            <NavLink to="/winners" onClick={() => setIsOpen(false)} className="py-4 border-b border-pure-white/10 text-pure-white hover:text-accent-gold transition-colors font-bold uppercase">
-              WINNERS
-            </NavLink>
-
-            {/* Expandable COMMUNITY Drawer */}
-            <div className="flex flex-col border-b border-pure-white/10">
+            {/* COMMUNITY: Expandable card */}
+            <div className="col-span-2 bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl hover:border-gold-metallic/30 transition-all duration-300">
               <button
                 onClick={() => setMobileCommunityOpen(!mobileCommunityOpen)}
-                className="w-full flex items-center justify-between py-4 hover:text-accent-gold transition-colors text-left font-bold text-pure-white text-[18px] uppercase cursor-pointer"
+                className="w-full flex items-center justify-between text-left focus:outline-none cursor-pointer"
               >
-                <span>COMMUNITY</span>
-                <span className={`text-xs transform transition-transform duration-200 ${mobileCommunityOpen ? 'rotate-180' : ''}`}>▼</span>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold">
+                    <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                  </div>
+                  <div>
+                    <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">Community</span>
+                    <span className="block text-[8px] text-pure-white/30 mt-0.5 font-medium">Stories &amp; Hub</span>
+                  </div>
+                </div>
+                <span className={`text-[10px] text-pure-white/40 transform transition-transform duration-200 ${mobileCommunityOpen ? 'rotate-180' : ''}`}>▼</span>
               </button>
 
-              <div className={`pl-4 flex flex-col gap-3 overflow-hidden transition-all duration-300 ${mobileCommunityOpen ? 'max-h-[150px] py-2' : 'max-h-0'}`}>
-                <Link to="/community" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → Community Hub
+              <div className={`grid grid-cols-2 gap-2 overflow-hidden transition-all duration-300 ${mobileCommunityOpen ? 'max-h-[150px] mt-3 pt-3 border-t border-pure-white/5' : 'max-h-0'}`}>
+                <Link to="/community" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-bold text-pure-white/80 hover:text-accent-gold">
+                  Community Hub
                 </Link>
-                <Link to="/voice-of-golden preneur" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → Voice of Golden preneur
+                <Link to="/voice-of-golden preneur" onClick={() => setIsOpen(false)} className="py-2 px-3 rounded-lg bg-pure-white/5 border border-pure-white/5 text-[10px] font-bold text-pure-white/80 hover:text-accent-gold">
+                  Voice Gallery
                 </Link>
               </div>
             </div>
 
-            {/* Expandable MORE Drawer */}
-            <div className="flex flex-col border-b border-pure-white/10">
+            {/* FAQS: Square bento card */}
+            <Link 
+              to="/faqs" 
+              onClick={() => setIsOpen(false)}
+              className="bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl flex flex-col justify-between items-start text-left min-h-[110px] hover:border-gold-metallic/30 transition-all duration-300"
+            >
+              <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold mb-2">
+                <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div>
+                <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">FAQs</span>
+                <span className="block text-[8px] text-pure-white/30 tracking-wide font-medium mt-0.5">Help &amp; Support</span>
+              </div>
+            </Link>
+
+            {/* CONTACT: Square bento card */}
+            <Link 
+              to="/contact" 
+              onClick={() => setIsOpen(false)}
+              className="bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl flex flex-col justify-between items-start text-left min-h-[110px] hover:border-gold-metallic/30 transition-all duration-300"
+            >
+              <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold mb-2">
+                <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              </div>
+              <div>
+                <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">Contact</span>
+                <span className="block text-[8px] text-pure-white/30 tracking-wide font-medium mt-0.5">Get in Touch</span>
+              </div>
+            </Link>
+
+            {/* MORE Section (Jury, Partners, Blogs) */}
+            <div className="col-span-2 bg-pure-white/5 border border-pure-white/10 p-4 rounded-2xl hover:border-gold-metallic/30 transition-all duration-300">
               <button
                 onClick={() => setMobileMoreOpen(!mobileMoreOpen)}
-                className="w-full flex items-center justify-between py-4 hover:text-accent-gold transition-colors text-left font-bold text-pure-white text-[18px] uppercase cursor-pointer"
+                className="w-full flex items-center justify-between text-left focus:outline-none cursor-pointer"
               >
-                <span>MORE</span>
-                <span className={`text-xs transform transition-transform duration-200 ${mobileMoreOpen ? 'rotate-180' : ''}`}>▼</span>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-xl bg-pure-white/5 border border-pure-white/10 flex items-center justify-center text-accent-gold">
+                    <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg>
+                  </div>
+                  <div>
+                    <span className="block text-[12px] font-black tracking-wider uppercase text-pure-white">More Resources</span>
+                    <span className="block text-[8px] text-pure-white/30 mt-0.5 font-medium">Jury, Partners &amp; Blogs</span>
+                  </div>
+                </div>
+                <span className={`text-[10px] text-pure-white/40 transform transition-transform duration-200 ${mobileMoreOpen ? 'rotate-180' : ''}`}>▼</span>
               </button>
 
-              <div className={`pl-4 flex flex-col gap-3 overflow-hidden transition-all duration-300 ${mobileMoreOpen ? 'max-h-[200px] py-2' : 'max-h-0'}`}>
-                <Link to="/jury" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → Speakers & Jury
+              <div className={`grid grid-cols-3 gap-2 overflow-hidden transition-all duration-300 ${mobileMoreOpen ? 'max-h-[150px] mt-3 pt-3 border-t border-pure-white/5' : 'max-h-0'}`}>
+                <Link to="/jury" onClick={() => setIsOpen(false)} className="py-2 px-1 text-center rounded-lg bg-pure-white/5 border border-pure-white/5 text-[9px] font-bold text-pure-white/80 hover:text-accent-gold">
+                  Jury
                 </Link>
-                <Link to="/partners" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → Partners
+                <Link to="/partners" onClick={() => setIsOpen(false)} className="py-2 px-1 text-center rounded-lg bg-pure-white/5 border border-pure-white/5 text-[9px] font-bold text-pure-white/80 hover:text-accent-gold">
+                  Partners
                 </Link>
-                <Link to="/blogs" onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-pure-white/80 hover:text-pure-white font-bold">
-                  → Blogs
+                <Link to="/blogs" onClick={() => setIsOpen(false)} className="py-2 px-1 text-center rounded-lg bg-pure-white/5 border border-pure-white/5 text-[9px] font-bold text-pure-white/80 hover:text-accent-gold">
+                  Blogs
                 </Link>
               </div>
             </div>
-            <NavLink to="/faqs" onClick={() => setIsOpen(false)} className="py-4 border-b border-pure-white/10 text-pure-white hover:text-accent-gold transition-colors font-bold uppercase">
-              FAQS
-            </NavLink>
-            <NavLink to="/contact" onClick={() => setIsOpen(false)} className="py-4 border-b border-pure-white/10 text-pure-white hover:text-accent-gold transition-colors font-bold uppercase">
-              CONTACT
-            </NavLink>
           </div>
 
           {/* CTA Buttons in mobile menu */}
-          <div className="flex flex-col gap-4 mt-8">
+          <div className="flex flex-col gap-3 mt-6 shrink-0">
             <Link
               to="/awards/apply"
               onClick={() => setIsOpen(false)}
-              className="w-full h-[56px] flex items-center justify-center bg-gold-metallic text-dark-green font-black uppercase tracking-wider text-sm rounded-[6px] shadow-gold-lux"
+              className="w-full h-[52px] flex items-center justify-center bg-gold-metallic text-dark-green font-black uppercase tracking-wider text-xs rounded-[10px] shadow-gold-lux"
             >
               🌿 NOMINATE — FREE
             </Link>
             <Link
               to="/event-2026"
               onClick={() => setIsOpen(false)}
-              className="w-full h-[56px] flex items-center justify-center border border-[#B38728] bg-transparent text-[#B38728] font-bold uppercase tracking-wider text-sm rounded-[6px] hover:bg-gold-metallic hover:text-dark-green transition-all"
+              className="w-full h-[52px] flex items-center justify-center border border-gold-metallic/35 bg-transparent text-gold-metallic font-bold uppercase tracking-wider text-xs rounded-[10px] hover:bg-gold-metallic hover:text-dark-green transition-all"
             >
               GET EVENT PASS
             </Link>
