@@ -10,25 +10,25 @@ export default function About() {
       year: '2025',
       location: 'BSE India, Mumbai',
       theme: 'Scaling Circular Green Economies',
-      desc: 'Partnered with central sustainability chambers, felicitating 85+ green pioneers with national broadcast coverage.',
+      desc: 'Hosted a landmark national summit at the Bombay Stock Exchange, honoring 85+ green pioneers and establishing circular economy policy frameworks in collaboration with central regulatory bodies.',
     },
     {
       year: '2024',
       location: 'AMA Ahmedabad',
       theme: 'MSME & Grassroots Green Tech',
-      desc: 'Brought together 400+ delegates in Gujarat, focusing heavily on retail green product lines and green manufacturing practices.',
+      desc: 'Gathered over 400 visionaries at AMA, driving critical dialogues on eco-manufacturing pathways and retail sustainability policies for India\'s emerging MSME sector.',
     },
     {
       year: '2023',
       location: 'CEE (Centre for Environment Education), Ahmedabad',
       theme: 'Climate Action & Sustainable Habitats',
-      desc: 'Aligned directly with national environmental educators, evaluating innovations in eco-tourism and organic farming.',
+      desc: 'Collaborated with India\'s leading environmental educators at CEE to evaluate and seed early-stage innovations in regenerative agriculture and green habitats.',
     },
     {
       year: '2022',
       location: 'VyapaarJagat Digital Conclave',
       theme: 'Post-Pandemic Green Turnaround',
-      desc: 'An intensive virtual convention celebrating resource resilience, green supply chain shifts, and early waste startups.',
+      desc: 'Launched a nation-wide virtual convention evaluating post-pandemic industrial resilience, green logistics integration, and early-stage waste management technologies.',
     },
   ];
 
