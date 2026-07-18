@@ -252,14 +252,13 @@ export default function About() {
               loop 
               muted 
               playsInline 
-              className="w-full h-full object-cover opacity-25 filter blur-[4px] scale-[1.05]"
+              className="w-full h-full object-cover opacity-60 filter blur-[1px] scale-[1.02]"
             >
               <source src="/hardik-conclave.mp4" type="video/mp4" />
             </video>
-            {/* Rich gradient layers to mask video bounds and blend with the theme */}
-            <div className="absolute inset-0 bg-gradient-to-r from-dark-green via-dark-green/75 to-dark-green"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#02110B]/85 via-transparent to-[#0A5C36]/85"></div>
-            <div className="absolute inset-0 lottery-overlay opacity-5 pointer-events-none"></div>
+            {/* Elegant vignette overlay: clear center, fading to dark green edges */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#052216_85%)]"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#052216]/10 to-[#052216]/40"></div>
           </div>
           
           <motion.div 
