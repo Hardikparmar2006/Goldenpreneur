@@ -97,13 +97,13 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Vishal Parmar */}
+            {/* Hardik Parmar */}
             <div className="bg-pure-white rounded-3xl p-8 shadow-xl border border-light-grey flex flex-col items-center text-center hover:translate-y-[-4px] transition-all duration-300 group">
               <div className="relative mb-6">
-                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-cream-white shadow-md">
+                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-cream-white shadow-md bg-white">
                   <img
-                    src="/vishal.jpeg"
-                    alt="Vishal Parmar"
+                    src="/hardik.jpg"
+                    alt="Hardik Parmar"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -112,23 +112,23 @@ export default function Contact() {
                 </div>
               </div>
               <h3 className="font-playfair text-2xl font-bold text-dark-green mb-1">
-                Vishal Parmar
+                Hardik Parmar
               </h3>
               <p className="text-accent-gold font-semibold uppercase tracking-wider text-[10px] mb-4">
-                Managing Patron — Peers Global Syndicate
+                Laravel • WordPress • Zoho Developer
               </p>
               <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
-                Contact directly for corporate sponsorships, exhibition stall bookings, and leadership event registrations.
+                Contact directly for web development, technical inquiries, and digital solution alignment.
               </p>
               <div className="grid grid-cols-2 gap-3 w-full">
                 <a
-                  href="tel:+917041151714"
+                  href="tel:+919558739086"
                   className="py-3 btn-premium-primary"
                 >
                   <Phone className="w-4 h-4" /> Call
                 </a>
                 <a
-                  href="https://wa.me/917041151714"
+                  href="https://wa.me/919558739086"
                   className="py-3 bg-[#25D366] text-pure-white text-center rounded-xl font-bold text-xs shadow-md hover:opacity-90 transition-all flex items-center justify-center gap-1.5"
                 >
                   <MessageCircle className="w-4 h-4" /> WhatsApp
