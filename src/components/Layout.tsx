@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
 import { getNominationCount } from '../utils/api';
 // import AppPopup from './AppPopup';
 
@@ -744,27 +744,16 @@ export default function Layout() {
                     </a>
                     <span className="text-xs text-pure-white/50">Official Inquiries</span>
                   </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span className="text-xs text-pure-white/70">
-                    Shapath 1, 805, Sarkhej - Gandhinagar Hwy, Highway Park Society, Bodakdev, Ahmedabad, Gujarat 380015
-                  </span>
-                </div>
+                
+              </div>
               </div>
             </div>
           </div>
 
           {/* Divider and Bottom bar */}
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.10)', marginTop: '40px', paddingTop: '20px' }}>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.35)', textAlign: 'center', margin: 0, paddingBottom: '8px' }}>
-              © 2026 Golden preneur | 1 Million Entrepreneurs International Forum | Section 8 NGO | 80G &amp; 12A Certified | CSR No: CSR00106194 | PAN: AACCZ1279M
-            </p>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.35)', textAlign: 'center', margin: 0 }}>
-              Niti Aayog Darpan Certified | CEED Association Partner
-            </p>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.35)', textAlign: 'center', margin: '8px 0 0 0' }}>
-              Designed &amp; Developed by <span className="text-pure-white/60 font-semibold">Aequitas Infotech</span>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.45)', textAlign: 'center', margin: 0 }}>
+              © 2026 Golden preneur | Designed &amp; Developed by <span className="text-pure-white/80 font-bold hover:text-accent-gold transition-colors duration-200 cursor-pointer">Hardik Parmar</span>
             </p>
 
             {/* Indian Flag stripe */}
