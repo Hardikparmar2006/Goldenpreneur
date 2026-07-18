@@ -244,13 +244,28 @@ export default function About() {
 
       {/* LEADERSHIP / FOUNDER MESSAGE */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="bg-dark-green text-pure-white rounded-3xl overflow-hidden shadow-2xl relative border border-pure-white/10">
-          <div className="absolute inset-0 lottery-overlay opacity-5 pointer-events-none"></div>
+        <div className="bg-dark-green text-pure-white rounded-3xl overflow-hidden shadow-2xl relative border border-pure-white/10 min-h-[500px] flex items-center justify-center">
+          {/* Cinematic Looped Background Video with Blur & Overlays */}
+          <div className="absolute inset-0 z-0">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              className="w-full h-full object-cover opacity-25 filter blur-[4px] scale-[1.05]"
+            >
+              <source src="/hardik-conclave.mp4" type="video/mp4" />
+            </video>
+            {/* Rich gradient layers to mask video bounds and blend with the theme */}
+            <div className="absolute inset-0 bg-gradient-to-r from-dark-green via-dark-green/75 to-dark-green"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#02110B]/85 via-transparent to-[#0A5C36]/85"></div>
+            <div className="absolute inset-0 lottery-overlay opacity-5 pointer-events-none"></div>
+          </div>
           
           <motion.div 
             layout 
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="p-8 sm:p-16 relative z-10 flex flex-col items-center justify-center text-center"
+            className="p-8 sm:p-16 relative z-10 flex flex-col items-center justify-center text-center w-full"
           >
             {!isProfileExpanded ? (
               // Initial State: Trendy 3D-effect VIP Card Cover
