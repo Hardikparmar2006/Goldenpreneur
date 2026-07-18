@@ -282,7 +282,7 @@ export default function Home() {
       <div className="absolute inset-0 lottery-overlay lotus-pattern pointer-events-none z-0"></div>
 
       {/* SECTION 1: HERO */}
-      <section className="relative min-h-[750px] lg:h-[880px] flex items-center overflow-hidden py-16 lg:py-0 bg-dark-green text-pure-white z-10">
+      <section className="relative min-h-[650px] lg:min-h-[calc(100vh-120px)] flex items-center overflow-hidden py-24 lg:py-32 bg-dark-green text-pure-white z-10">
         {/* Overlapping premium satin waves and metallic gold ribbon curves */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#02110B] via-[#052216] to-[#0A5C36] opacity-90"></div>
