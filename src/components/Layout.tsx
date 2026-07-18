@@ -120,7 +120,22 @@ export default function Layout() {
 
         {/* Logo */}
         <Link to="/" className="flex items-center shrink-0" style={{ textDecoration: 'none', cursor: 'pointer', gap: '10px' }}>
-          <img src="/logo-cropped.png" alt="Golden preneur" className="h-[45px] lg:h-[50px] w-auto object-contain drop-shadow-sm" />
+          <div className="flex items-center gap-2 select-none">
+            {/* Elegant Double Leaf / Lotus Icon */}
+            <svg className="w-9 h-9 text-gold-metallic filter drop-shadow-[0_1px_3px_rgba(179,135,40,0.3)] animate-pulse" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M50 15 C55 25, 65 35, 75 35 C85 35, 90 25, 90 15 C90 5, 80 0, 50 15 Z" fill="#D4AF37" />
+              <path d="M50 15 C45 25, 35 35, 25 35 C15 35, 10 25, 10 15 C10 5, 20 0, 50 15 Z" fill="#AA771C" />
+              <path d="M50 25 C55 45, 70 60, 85 60 C85 65, 80 85, 50 95 C20 85, 15 65, 15 60 C30 60, 45 45, 50 25 Z" fill="#0B5B3E" />
+            </svg>
+            <div className="flex flex-col text-left">
+              <span className="font-playfair text-[15px] font-black leading-none text-dark-green uppercase tracking-[1px] select-none">
+                Golden
+              </span>
+              <span className="font-inter text-[9px] font-bold leading-none text-gold-metallic uppercase tracking-[0.25em] mt-0.5 select-none">
+                preneur
+              </span>
+            </div>
+          </div>
         </Link>
 
         {/* Desktop Center Nav Links (reduced gap to prevent overflow) */}
@@ -348,7 +363,21 @@ export default function Layout() {
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-pure-white/10">
             <Link to="/" className="flex items-center" style={{ textDecoration: 'none', gap: '10px' }} onClick={() => setIsOpen(false)}>
               {/* Mobile Drawer Logo */}
-              <img src="/logo-cropped.png" alt="Golden preneur" className="h-[40px] w-auto object-contain drop-shadow-sm" />
+              <div className="flex items-center gap-2 select-none">
+                <svg className="w-8 h-8 text-gold-metallic filter drop-shadow-[0_1px_3px_rgba(179,135,40,0.3)]" viewBox="0 0 100 100" fill="currentColor">
+                  <path d="M50 15 C55 25, 65 35, 75 35 C85 35, 90 25, 90 15 C90 5, 80 0, 50 15 Z" fill="#D4AF37" />
+                  <path d="M50 15 C45 25, 35 35, 25 35 C15 35, 10 25, 10 15 C10 5, 20 0, 50 15 Z" fill="#AA771C" />
+                  <path d="M50 25 C55 45, 70 60, 85 60 C85 65, 80 85, 50 95 C20 85, 15 65, 15 60 C30 60, 45 45, 50 25 Z" fill="#81C784" />
+                </svg>
+                <div className="flex flex-col text-left">
+                  <span className="font-playfair text-sm font-black leading-none text-pure-white uppercase tracking-[1px] select-none">
+                    Golden
+                  </span>
+                  <span className="font-inter text-[8px] font-bold leading-none text-gold-metallic uppercase tracking-[0.25em] mt-0.5 select-none">
+                    preneur
+                  </span>
+                </div>
+              </div>
             </Link>
             <button onClick={() => setIsOpen(false)} className="text-pure-white hover:scale-110 transition-all cursor-pointer">
               <X className="w-6 h-6" />
@@ -514,7 +543,21 @@ export default function Layout() {
             <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '260px' }}>
               {/* Footer Logo */}
               <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', marginBottom: '12px' }}>
-                <img src="/logo-cropped.png" alt="Golden preneur" className="h-[60px] md:h-[70px] w-auto object-contain drop-shadow-sm" />
+                <div className="flex items-center gap-2.5 select-none">
+                  <svg className="w-12 h-12 text-gold-metallic filter drop-shadow-[0_1px_3px_rgba(179,135,40,0.3)]" viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M50 15 C55 25, 65 35, 75 35 C85 35, 90 25, 90 15 C90 5, 80 0, 50 15 Z" fill="#D4AF37" />
+                    <path d="M50 15 C45 25, 35 35, 25 35 C15 35, 10 25, 10 15 C10 5, 20 0, 50 15 Z" fill="#AA771C" />
+                    <path d="M50 25 C55 45, 70 60, 85 60 C85 65, 80 85, 50 95 C20 85, 15 65, 15 60 C30 60, 45 45, 50 25 Z" fill="#81C784" />
+                  </svg>
+                  <div className="flex flex-col text-left">
+                    <span className="font-playfair text-xl font-black leading-none text-pure-white uppercase tracking-[1.5px] select-none">
+                      Golden
+                    </span>
+                    <span className="font-inter text-[10px] font-bold leading-none text-gold-metallic uppercase tracking-[0.3em] mt-0.5 select-none">
+                      preneur
+                    </span>
+                  </div>
+                </div>
               </Link>
               {/* Footer tagline */}
               <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', fontStyle: 'italic', color: 'rgba(255,255,255,0.55)', margin: '0 0 16px 0', lineHeight: 1.5 }}>

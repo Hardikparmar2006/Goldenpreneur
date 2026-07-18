@@ -1,5 +1,6 @@
 import { Award, Users, Globe, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import AppPromo from '../components/AppPromo';
 
 export default function About() {
@@ -196,22 +197,52 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {previousEditions.map((ed, i) => (
-              <div
-                key={i}
-                className="bg-cream-white p-6 border border-light-grey rounded-lg relative group hover:border-accent-gold transition-all"
-              >
-                <span className="block text-4xl font-playfair font-bold text-accent-gold mb-3 opacity-60 group-hover:opacity-100 transition-opacity">
-                  {ed.year}
-                </span>
-                <span className="text-[10px] uppercase font-bold text-primary-green tracking-wider block mb-1">
-                  {ed.location}
-                </span>
-                <h4 className="font-bold text-sm text-dark-green mb-3">{ed.theme}</h4>
-                <p className="text-xs text-medium-grey leading-relaxed font-light">{ed.desc}</p>
-              </div>
-            ))}
+          {/* Animated Timeline Thread (horizontal on large screens, vertical on mobile) */}
+          <div className="relative max-w-6xl mx-auto py-10">
+            {/* Thread line */}
+            <div className="absolute top-[48px] left-[15px] lg:left-0 right-[15px] lg:right-0 h-0.5 bg-gradient-to-r from-[#B38728] via-[#0B5B3E] to-[#B38728] hidden lg:block opacity-30"></div>
+            
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.2
+                  }
+                }
+              }}
+              className="grid grid-cols-1 lg:grid-cols-4 gap-8 relative z-10"
+            >
+              {previousEditions.map((ed, i) => (
+                <motion.div
+                  key={i}
+                  variants={{
+                    hidden: { opacity: 0, y: 30 },
+                    visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80 } }
+                  }}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  className="bg-pure-white p-6 border border-light-grey rounded-2xl relative group hover:border-[#B38728]/45 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                >
+                  {/* Glowing Node on Timeline Thread */}
+                  <div className="absolute -top-[16px] left-6 w-8 h-8 rounded-full bg-cream-white border-2 border-accent-gold flex items-center justify-center hidden lg:flex shadow-md group-hover:bg-[#B38728] transition-colors duration-300">
+                    <div className="w-3 h-3 rounded-full bg-[#B38728] group-hover:bg-pure-white transition-colors duration-300"></div>
+                  </div>
+
+                  <span className="block text-4xl font-playfair font-black text-accent-gold mb-3 opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+                    {ed.year}
+                  </span>
+                  <span className="text-[9px] uppercase font-bold text-primary-green tracking-widest block mb-2">
+                    {ed.location}
+                  </span>
+                  <h4 className="font-bold text-sm text-dark-green mb-3 group-hover:text-primary-green transition-colors">{ed.theme}</h4>
+                  <p className="text-xs text-medium-grey leading-relaxed font-light mt-auto">{ed.desc}</p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>

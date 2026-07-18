@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import GoogleReviews from '../components/GoogleReviews';
 import HallOfGreen from '../components/HallOfGreen';
 import { submitContactEnquiry } from '../utils/api';
@@ -366,26 +367,31 @@ export default function Home() {
             </div>
 
             {/* Quick legacy stats */}
-            <div className="grid grid-cols-3 gap-6 sm:gap-10 border-t border-pure-white/10 pt-8 max-w-xl">
-              <div>
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+              className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 max-w-xl"
+            >
+              <div className="bg-pure-white/5 border border-pure-white/10 backdrop-blur-md p-4 rounded-xl shadow-lg hover:border-gold-metallic/35 hover:-translate-y-0.5 transition-all duration-300">
                 <span className="block text-3xl font-playfair font-black text-gold-metallic mb-1">05th</span>
-                <span className="text-pure-white/40 text-[12px] uppercase tracking-[0.2em] font-bold">
+                <span className="text-pure-white/50 text-[10px] uppercase tracking-[0.2em] font-bold block mt-1">
                   Annual Edition
                 </span>
               </div>
-              <div>
+              <div className="bg-pure-white/5 border border-pure-white/10 backdrop-blur-md p-4 rounded-xl shadow-lg hover:border-gold-metallic/35 hover:-translate-y-0.5 transition-all duration-300">
                 <span className="block text-3xl font-playfair font-black text-pure-white mb-1">500+</span>
-                <span className="text-pure-white/40 text-[12px] uppercase tracking-[0.2em] font-bold">
+                <span className="text-pure-white/50 text-[10px] uppercase tracking-[0.2em] font-bold block mt-1">
                   Delegates
                 </span>
               </div>
-              <div>
+              <div className="bg-pure-white/5 border border-pure-white/10 backdrop-blur-md p-4 rounded-xl shadow-lg hover:border-gold-metallic/35 hover:-translate-y-0.5 transition-all duration-300">
                 <span className="block text-3xl font-playfair font-black text-gold-metallic mb-1">17</span>
-                <span className="text-pure-white/40 text-[12px] uppercase tracking-[0.2em] font-bold">
+                <span className="text-pure-white/50 text-[10px] uppercase tracking-[0.2em] font-bold block mt-1">
                   SDGs Aligned
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Graphical Centerpiece: Spinning multicolor SDG Wheel with Ashoka Chakra & Trophy Base */}
@@ -1408,19 +1414,41 @@ export default function Home() {
             Whether you are a startup, MSME, sponsor, or student volunteer, there is a path for you to accelerate India's Viksit Bharat transition.
           </p>
 
-          <form onSubmit={handleJoinSubmit} className="bg-pure-white p-8 sm:p-10 rounded-3xl border border-[#B38728]/25 shadow-sm text-left max-w-2xl mx-auto">
-            <div className="grid sm:grid-cols-2 gap-5 mb-6">
+          <motion.form 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", bounce: 0.3, duration: 1 }}
+            onSubmit={handleJoinSubmit} 
+            className="bg-gradient-to-br from-cream-white/90 to-pure-white/70 backdrop-blur-md p-8 sm:p-10 rounded-3xl border border-[#B38728]/35 shadow-xl text-left max-w-2xl mx-auto relative overflow-hidden group"
+          >
+            {/* Soft decorative background green glow inside form */}
+            <div className="absolute -left-20 -bottom-20 w-44 h-44 rounded-full bg-[#0B5B3E]/5 blur-2xl pointer-events-none"></div>
+
+            <div className="grid sm:grid-cols-2 gap-5 mb-6 relative z-10">
               <div>
                 <label htmlFor="join-name" className="block text-xs font-bold text-dark-green uppercase tracking-wider mb-2">Your Name</label>
-                <input id="join-name" type="text" required className="w-full bg-[#FCFBF9] border border-light-grey rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B38728] font-semibold text-gray-700" placeholder="e.g. Aarav Sharma" />
+                <input 
+                  id="join-name" 
+                  type="text" 
+                  required 
+                  className="w-full bg-pure-white/80 border border-light-grey rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#B38728]/30 focus:border-[#B38728] transition-all duration-300 font-semibold text-gray-700" 
+                  placeholder="e.g. Aarav Sharma" 
+                />
               </div>
               <div>
                 <label htmlFor="join-email" className="block text-xs font-bold text-dark-green uppercase tracking-wider mb-2">Email Address</label>
-                <input id="join-email" type="email" required className="w-full bg-[#FCFBF9] border border-light-grey rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B38728] font-semibold text-gray-700" placeholder="e.g. aarav@gmail.com" />
+                <input 
+                  id="join-email" 
+                  type="email" 
+                  required 
+                  className="w-full bg-pure-white/80 border border-light-grey rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#B38728]/30 focus:border-[#B38728] transition-all duration-300 font-semibold text-gray-700" 
+                  placeholder="e.g. aarav@gmail.com" 
+                />
               </div>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6 relative z-10">
               <label className="block text-xs font-bold text-dark-green uppercase tracking-wider mb-2">Select Your Role</label>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
@@ -1429,37 +1457,41 @@ export default function Home() {
                   { value: 'sponsor', label: 'Sponsor' },
                   { value: 'volunteer', label: 'Volunteer' }
                 ].map((role) => (
-                  <button
+                  <motion.button
                     key={role.value}
                     type="button"
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.96 }}
                     onClick={() => setJoinRole(role.value)}
-                    className={`py-2.5 px-3 text-center border text-[11px] font-black rounded-lg transition-all cursor-pointer ${
+                    className={`py-2.5 px-3 text-center border text-[11px] font-black rounded-xl transition-all cursor-pointer ${
                       joinRole === role.value
-                        ? 'border-[#B38728] bg-gold-metallic text-dark-green shadow-sm'
-                        : 'border-light-grey bg-pure-white text-gray-500 hover:border-[#B38728]/40'
+                        ? 'border-[#B38728] bg-gold-metallic text-dark-green shadow-md shadow-[#B38728]/20'
+                        : 'border-light-grey bg-pure-white/95 text-gray-500 hover:border-[#B38728]/40 hover:bg-pure-white'
                     }`}
                   >
                     {role.label}
-                  </button>
+                  </motion.button>
                 ))}
               </div>
             </div>
 
-            <button
+            <motion.button
               type="submit"
-              className="w-full py-4 bg-gold-metallic text-dark-green font-black uppercase tracking-[0.2em] text-xs hover:shadow-gold-lux hover:scale-102 rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full py-4 bg-gold-metallic text-dark-green font-black uppercase tracking-[0.2em] text-xs hover:shadow-gold-lux rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer relative z-10"
             >
               Submit Application
               <Check className="w-4.5 h-4.5" />
-            </button>
+            </motion.button>
 
             {joinStatus === 'success' && (
-              <div className="mt-4 p-4 bg-green-500/10 border border-green-500/30 text-green-700 rounded-lg text-xs font-bold flex items-center gap-2">
+              <div className="mt-4 p-4 bg-green-500/10 border border-green-500/30 text-green-700 rounded-lg text-xs font-bold flex items-center gap-2 relative z-10">
                 <Check className="w-4 h-4 shrink-0" />
                 <span>Thank you! Your join request has been sent successfully to the secretariat.</span>
               </div>
             )}
-          </form>
+          </motion.form>
         </div>
       </section>
 
@@ -1478,29 +1510,54 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.15
+                }
+              }
+            }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+          >
             {[
               { title: 'Green MSME Compliance Guide', format: 'PDF (4.2 MB)', desc: 'Understand environmental regulations and how to register green certifications for MSMEs in India.', date: 'May 2026' },
               { title: 'SDG Pitch Deck Template', format: 'PPTX (1.8 MB)', desc: 'Pitch template structured to highlight carbon footprint reductions and ESG metrics for investors.', date: 'Jun 2026' },
               { title: 'Carbon Footprint Calculator', format: 'EXCEL (2.1 MB)', desc: 'Simplified spreadsheet calculator mapping local business logistics and waste into carbon output metrics.', date: 'Apr 2026' }
             ].map((res, i) => (
-              <div key={i} className="bg-pure-white p-8 border border-light-grey/80 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
-                <div className="text-left">
-                  <div className="w-10 h-10 rounded-xl bg-[#B38728]/10 flex items-center justify-center text-[#B38728] mb-5">
+              <motion.div 
+                key={i} 
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } }
+                }}
+                whileHover={{ y: -6, scale: 1.02 }}
+                className="bg-gradient-to-br from-pure-white via-pure-white to-[#B38728]/5 p-8 border border-light-grey/80 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-[#B38728]/45 transition-all duration-300 relative overflow-hidden group"
+              >
+                {/* Visual subtle card glow */}
+                <div className="absolute -right-16 -top-16 w-32 h-32 rounded-full bg-gradient-to-br from-[#B38728]/10 to-[#0B5B3E]/5 blur-xl group-hover:scale-120 transition-transform duration-500"></div>
+
+                <div className="text-left relative z-10">
+                  <div className="w-10 h-10 rounded-xl bg-[#B38728]/10 flex items-center justify-center text-[#B38728] mb-5 group-hover:scale-110 group-hover:bg-[#B38728]/25 transition-all duration-300">
                     <FileText className="w-5 h-5" />
                   </div>
-                  <h4 className="font-playfair text-xl font-black text-dark-green mb-2">{res.title}</h4>
+                  <h4 className="font-playfair text-xl font-black text-dark-green mb-2 group-hover:text-primary-green transition-colors">{res.title}</h4>
                   <p className="text-xs text-gray-500 leading-relaxed font-semibold mb-6">{res.desc}</p>
                 </div>
-                <div className="flex justify-between items-center pt-4 border-t border-light-grey mt-auto">
+                <div className="flex justify-between items-center pt-4 border-t border-light-grey mt-auto relative z-10">
                   <span className="text-[10px] text-medium-grey font-bold uppercase tracking-wider">{res.format}</span>
                   <button className="flex items-center gap-1.5 text-xs font-black text-[#B38728] hover:text-dark-green transition-colors cursor-pointer">
                     <Download className="w-4 h-4" /> Download
                   </button>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -1514,40 +1571,71 @@ export default function Home() {
             Supported by Trusted Institutions
           </h2>
 
-          <div className="flex flex-wrap justify-center items-center gap-12 max-w-4xl mx-auto py-8">
-            <div className="bg-pure-white px-8 py-5 border border-light-grey rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <span className="font-playfair text-xl font-bold tracking-tight text-indian-green">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: {
+                  staggerChildren: 0.1
+                }
+              }
+            }}
+            className="flex flex-wrap justify-center items-center gap-6 md:gap-8 max-w-4xl mx-auto py-8"
+          >
+            <motion.div 
+              variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }}
+              whileHover={{ scale: 1.05, y: -4 }}
+              className="bg-pure-white px-8 py-6 border border-light-grey rounded-2xl shadow-sm hover:shadow-xl hover:border-[#B38728]/30 transition-all duration-300 w-[200px] text-center"
+            >
+              <span className="font-playfair text-xl font-bold tracking-tight text-indian-green block">
                 MEIF
               </span>
-              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-1">
+              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-2">
                 NGO Organizer
               </span>
-            </div>
-            <div className="bg-pure-white px-8 py-5 border border-light-grey rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <span className="font-inter text-xl font-black tracking-tight text-[#0A2540]">
+            </motion.div>
+            <motion.div 
+              variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }}
+              whileHover={{ scale: 1.05, y: -4 }}
+              className="bg-pure-white px-8 py-6 border border-light-grey rounded-2xl shadow-sm hover:shadow-xl hover:border-[#B38728]/30 transition-all duration-300 w-[200px] text-center"
+            >
+              <span className="font-inter text-lg font-black tracking-tight text-[#0A2540] block">
                 VyapaarJagat.com
               </span>
-              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-1">
+              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-2">
                 Media Power
               </span>
-            </div>
-            <div className="bg-pure-white px-8 py-5 border border-light-grey rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <span className="font-playfair text-xl font-extrabold tracking-tight text-[#B38728]">
+            </motion.div>
+            <motion.div 
+              variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }}
+              whileHover={{ scale: 1.05, y: -4 }}
+              className="bg-pure-white px-8 py-6 border border-light-grey rounded-2xl shadow-sm hover:shadow-xl hover:border-[#B38728]/30 transition-all duration-300 w-[200px] text-center"
+            >
+              <span className="font-playfair text-xl font-extrabold tracking-tight text-[#B38728] block">
                 CEED
               </span>
-              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-1">
+              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-2">
                 Association Partner
               </span>
-            </div>
-            <div className="bg-pure-white px-8 py-5 border border-light-grey rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <span className="font-playfair text-xl font-bold tracking-tight text-dark-green">
+            </motion.div>
+            <motion.div 
+              variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }}
+              whileHover={{ scale: 1.05, y: -4 }}
+              className="bg-pure-white px-8 py-6 border border-light-grey rounded-2xl shadow-sm hover:shadow-xl hover:border-[#B38728]/30 transition-all duration-300 w-[200px] text-center"
+            >
+              <span className="font-playfair text-xl font-bold tracking-tight text-dark-green block">
                 Peers Global
               </span>
-              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-1">
+              <span className="text-[8px] block uppercase text-medium-grey tracking-widest font-bold mt-2">
                 Business Platform
               </span>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <div className="mt-8">
             <p className="text-xs text-medium-grey mb-4 font-semibold font-inter">
