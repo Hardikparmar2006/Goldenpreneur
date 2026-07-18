@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, MessageCircle, MapPin, Calendar, Award, CheckCircle } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Calendar, CheckCircle } from 'lucide-react';
 import { submitContactEnquiry } from '../utils/api';
 
 export default function Contact() {
@@ -56,84 +56,43 @@ export default function Contact() {
 
       {/* Leadership Profile Cards */}
       <section className="relative z-20 -mt-10 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Dr. Pravin Parmar */}
-            <div className="bg-pure-white rounded-3xl p-8 shadow-xl border border-light-grey flex flex-col items-center text-center hover:translate-y-[-4px] transition-all duration-300 group">
-              <div className="relative mb-6">
-                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-cream-white shadow-md bg-white">
-                  <img
-                    src="/pravin.png"
-                    alt="Dr. Pravin Parmar"
-                    className="w-full h-full object-cover scale-[1.7] origin-[50%_40%]"
-                  />
-                </div>
-                <div className="absolute bottom-1 right-1 w-7 h-7 bg-primary-green rounded-full flex items-center justify-center border-2 border-pure-white text-pure-white">
-                  <Award className="w-4 h-4" />
-                </div>
+        <div className="max-w-md mx-auto">
+          {/* Hardik Parmar */}
+          <div className="bg-pure-white rounded-3xl p-8 shadow-xl border border-light-grey flex flex-col items-center text-center hover:translate-y-[-4px] transition-all duration-300 group">
+            <div className="relative mb-6">
+              <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-cream-white shadow-md bg-white">
+                <img
+                  src="/hardik.jpg"
+                  alt="Hardik Parmar"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="font-playfair text-2xl font-bold text-dark-green mb-1">
-                Dr. Pravin Parmar
-              </h3>
-              <p className="text-accent-gold font-semibold uppercase tracking-wider text-[10px] mb-4">
-                Grand Chancellor — MEIF Syndicate
-              </p>
-              <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
-                "Golden preneur is a covenant to safeguard India's biological and economic future. Convene with us to realize this trajectory."
-              </p>
-              <div className="grid grid-cols-2 gap-3 w-full">
-                <a
-                  href="tel:+917041151714"
-                  className="py-3 btn-premium-primary"
-                >
-                  <Phone className="w-4 h-4" /> Call
-                </a>
-                <a
-                  href="https://wa.me/917041151714"
-                  className="py-3 bg-[#25D366] text-pure-white text-center rounded-xl font-bold text-xs shadow-md hover:opacity-90 transition-all flex items-center justify-center gap-1.5"
-                >
-                  <MessageCircle className="w-4 h-4" /> WhatsApp
-                </a>
+              <div className="absolute bottom-1 right-1 w-7 h-7 bg-[#25D366] rounded-full flex items-center justify-center border-2 border-pure-white text-pure-white">
+                <MessageCircle className="w-4 h-4" />
               </div>
             </div>
-
-            {/* Hardik Parmar */}
-            <div className="bg-pure-white rounded-3xl p-8 shadow-xl border border-light-grey flex flex-col items-center text-center hover:translate-y-[-4px] transition-all duration-300 group">
-              <div className="relative mb-6">
-                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-cream-white shadow-md bg-white">
-                  <img
-                    src="/hardik.jpg"
-                    alt="Hardik Parmar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute bottom-1 right-1 w-7 h-7 bg-[#25D366] rounded-full flex items-center justify-center border-2 border-pure-white text-pure-white">
-                  <MessageCircle className="w-4 h-4" />
-                </div>
-              </div>
-              <h3 className="font-playfair text-2xl font-bold text-dark-green mb-1">
-                Hardik Parmar
-              </h3>
-              <p className="text-accent-gold font-semibold uppercase tracking-wider text-[10px] mb-4">
-                Laravel • WordPress • Zoho Developer
-              </p>
-              <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
-                Contact directly for web development, technical inquiries, and digital solution alignment.
-              </p>
-              <div className="grid grid-cols-2 gap-3 w-full">
-                <a
-                  href="tel:+919558739086"
-                  className="py-3 btn-premium-primary"
-                >
-                  <Phone className="w-4 h-4" /> Call
-                </a>
-                <a
-                  href="https://wa.me/919558739086"
-                  className="py-3 bg-[#25D366] text-pure-white text-center rounded-xl font-bold text-xs shadow-md hover:opacity-90 transition-all flex items-center justify-center gap-1.5"
-                >
-                  <MessageCircle className="w-4 h-4" /> WhatsApp
-                </a>
-              </div>
+            <h3 className="font-playfair text-2xl font-bold text-dark-green mb-1">
+              Hardik Parmar
+            </h3>
+            <p className="text-accent-gold font-semibold uppercase tracking-wider text-[10px] mb-4">
+              Laravel • WordPress • Zoho Developer
+            </p>
+            <p className="text-gray-500 mb-8 max-w-xs text-xs leading-relaxed font-light">
+              Contact directly for web development, technical inquiries, and digital solution alignment.
+            </p>
+            <div className="grid grid-cols-2 gap-3 w-full">
+              <a
+                href="tel:+919558739086"
+                className="py-3 btn-premium-primary"
+              >
+                <Phone className="w-4 h-4" /> Call
+              </a>
+              <a
+                href="https://wa.me/919558739086"
+                className="py-3 bg-[#25D366] text-pure-white text-center rounded-xl font-bold text-xs shadow-md hover:opacity-90 transition-all flex items-center justify-center gap-1.5"
+              >
+                <MessageCircle className="w-4 h-4" /> WhatsApp
+              </a>
             </div>
           </div>
         </div>
